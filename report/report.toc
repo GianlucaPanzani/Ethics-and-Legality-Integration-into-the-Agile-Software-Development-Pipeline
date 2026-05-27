@@ -1,0 +1,44 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {section}{\numberline {2}Conceptual Foundations}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Cybernetics: feedback as the organising principle}{1}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Machine intelligence and the limits of behavioural imitation}{1}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Syntax, semantics, and the Chinese Room}{2}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Responsibility, many hands, and the responsibility gap}{2}{subsection.2.4}%
+\contentsline {section}{\numberline {3}The Agile-VSD model}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}The Agile sprint loop}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Expansion with Value Sensitive Design (VSD)}{3}{subsection.3.2}%
+\contentsline {paragraph}{How the diagram expands.}{3}{section*.2}%
+\contentsline {subsection}{\numberline {3.3}Stakeholder tokens and value source analysis}{3}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Connection to responsibility}{3}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Conceptual Engineering and the First Value Hierarchy}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Why conceptual engineering is needed}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Conceptual Engineering inside sprint planning}{4}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}First value hierarchy}{4}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Integration with the Agile-VSD loop}{5}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Expansion 1: Requirements Engineering through GORE and SLEEC}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}From values to normative goals}{5}{subsection.5.1}%
+\contentsline {paragraph}{How the diagram expands.}{5}{section*.3}%
+\contentsline {subsection}{\numberline {5.2}GORE artefacts}{5}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}From normative goals to SLEEC rules}{6}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Testability and conflict detection}{6}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Expansion 2: DevOps and Compliance-as-Code}{7}{section.6}%
+\contentsline {subsection}{\numberline {6.1}From ethical requirements to pipeline controls}{7}{subsection.6.1}%
+\contentsline {paragraph}{How the diagram expands.}{7}{section*.4}%
+\contentsline {subsection}{\numberline {6.2}Shift-left compliance}{7}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Policy-as-Code tools}{8}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Active and passive responsibility in DevOps}{8}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Expansion 3: MLOps and Runtime Assurance}{9}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Why AI requires a further expansion}{9}{subsection.7.1}%
+\contentsline {paragraph}{How the diagram expands.}{9}{section*.5}%
+\contentsline {subsection}{\numberline {7.2}The W-shaped AI lifecycle}{9}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Design-time assurance}{9}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Runtime assurance}{10}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Meaningful Human Control}{10}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Connection to superintelligence and value alignment}{10}{subsection.7.6}%
+\contentsline {section}{\numberline {8}Integrated Final Pipeline}{11}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Final layered model}{11}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Traceability matrix}{11}{subsection.8.2}%
+\contentsline {section}{\numberline {9}Mapping Course Topics to the Pipeline}{12}{section.9}%
+\contentsline {section}{\numberline {10}Implementation Blueprint}{12}{section.10}%
+\contentsline {section}{\numberline {11}Conclusion}{13}{section.11}%
