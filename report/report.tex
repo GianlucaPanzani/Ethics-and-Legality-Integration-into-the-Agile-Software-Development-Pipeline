@@ -153,19 +153,34 @@ The initial diagram is a standard Agile loop. Its strength is rapid iteration; i
 
 \begin{figure}[h]
 \centering
-\begin{tikzpicture}[node distance=1.6cm]
-    \node[process] (plan) {Planning};
-    \node[process, right=of plan] (dev) {Design \& Development};
-    \node[process, right=of dev] (test) {Testing};
-    \node[process, below=of test] (review) {Review/Retrospective};
-    \node[process, left=of review] (backlog) {Backlog Refinement};
-    \draw[arrow] (plan) -- (dev);
-    \draw[arrow] (dev) -- (test);
-    \draw[arrow] (test) -- (review);
-    \draw[arrow] (review) -- (backlog);
-    \draw[arrow] (backlog) -- (plan);
+\begin{tikzpicture}[node distance=1.7cm and 2.2cm]
+    \node[process, text width=3.2cm, align=center] (backlog) {
+        \textbf{Backlog Refinement}\\
+        {\scriptsize Stakeholder \& Value Elicitation}
+    };
+    \node[process, text width=3.2cm, align=center, right=of backlog] (planning) {
+        \textbf{Sprint Planning}\\
+        {\scriptsize Conceptual Engineering \& Value Hierarchy}
+    };
+    \node[process, text width=3.2cm, align=center, right=of planning] (execution) {
+        \textbf{Sprint Execution}\\
+        {\scriptsize Value-Sensitive Implementation}
+    };
+    \node[process, text width=3.2cm, align=center, below=of execution] (review) {
+        \textbf{Sprint Review}\\
+        {\scriptsize Empirical Value Validation}
+    };
+    \node[process, text width=3.2cm, align=center, left=of review] (retro) {
+        \textbf{Sprint Retrospective}\\
+        {\scriptsize Responsibility \& Value Tension Review}
+    };
+    \draw[arrow] (backlog) -- (planning);
+    \draw[arrow] (planning) -- (execution);
+    \draw[arrow] (execution) -- (review);
+    \draw[arrow] (review) -- (retro);
+    \draw[arrow] (retro) -- (backlog);
 \end{tikzpicture}
-\caption{Baseline Agile loop.}
+\caption{Agile/Scrum sprint loop enriched by a Value Sensitive Design layer. VSD is not represented as a separate downstream phase, but as a cross-cutting layer that informs backlog refinement, planning, implementation, review, and retrospective activities.}
 \label{fig:agile-loop}
 \end{figure}
 
@@ -238,41 +253,56 @@ The first stable artefact is a value hierarchy:
 
 \begin{table}[h]
 \centering
-\caption{Example value hierarchy.}
-\begin{tabular}{p{2.6cm}p{3.6cm}p{4.0cm}p{3.2cm}}
+\begin{tabular}{p{2.4cm}p{3.4cm}p{5.0cm}p{3.5cm}}
 \toprule
 \textbf{Value} & \textbf{Norm} & \textbf{Requirement} & \textbf{Verification} \\
 \midrule
-Privacy & Data minimisation & Collect only fields required for the declared purpose & Schema test; privacy review \\
-Autonomy & Meaningful user control & Provide consent withdrawal and appeal path & UX test; audit log \\
-Fairness & Non-discrimination & Evaluate model performance across relevant groups & Fairness test report \\
-Transparency & Explainability & Provide understandable reasons for consequential decisions & Explanation acceptance test \\
-Security & Integrity and confidentiality & Encrypt personal data at rest and in transit & IaC/policy test \\
+Privacy & Data minimisation & Collect only fields required for the declared purpose. & Schema test; privacy review \\
+Autonomy & Meaningful user control & Provide users with the ability to change their choices or appeal decisions. & UX test; audit log \\
+Fairness & Non-discrimination & Evaluate model performance across relevant groups. & Fairness test report \\
+Transparency & Explainability & Provide understandable reasons for consequential decisions. & Explanation acceptance test \\
+Security & Integrity and confidentiality & Encrypt personal data at rest and in transit. & IaC/policy test \\
 \bottomrule
 \end{tabular}
+\caption{Some examples of value hierarchy.}
 \end{table}
 
 For GDPR-relevant systems, this hierarchy should be aligned with Article~5 principles such as lawfulness, fairness, transparency, purpose limitation, data minimisation, accuracy, storage limitation, integrity/confidentiality, and accountability, and with Article~25 data protection by design and by default \cite{gdpr_art5,gdpr_art25,edpb_dpbdd}. For AI systems, it should also be aligned with the AI Act's risk-based framework and requirements such as human oversight for high-risk AI systems \cite{eu_ai_act,ai_act_human_oversight}.
 
 \subsection{Integration with the Agile-VSD loop}
 
-The correct role of Conceptual Engineering is not simply to ``define values'' once. It is a dynamic method for assessing, refining, and possibly re-engineering the concepts used in requirements. This should be performed continuously when the system, stakeholder context, or regulatory environment changes.
+The correct role of Conceptual Engineering is not simply to ``define values'' once. It is a dynamic approach for assessing, refining, and possibly re-engineering the concepts used in requirements. This should be performed continuously when the system, stakeholder context, or regulatory environment changes.
 
 \begin{figure}[h]
 \centering
-\begin{tikzpicture}[node distance=1.6cm]
-    \node[process] (plan) {Planning};
-    \node[process, right=of plan] (dev) {Design \& Development};
-    \node[process, right=of dev] (test) {Testing};
-    \node[process, below=of test] (review) {Review/Retrospective};
-    \node[process, left=of review] (backlog) {Backlog Refinement};
-    \draw[arrow] (plan) -- (dev);
-    \draw[arrow] (dev) -- (test);
-    \draw[arrow] (test) -- (review);
-    \draw[arrow] (review) -- (backlog);
-    \draw[arrow] (backlog) -- (plan);
+\begin{tikzpicture}[node distance=1.7cm and 2.2cm]
+    \node[process, text width=3.2cm, align=center] (backlog) {
+        \textbf{Backlog Refinement}\\
+        {\scriptsize Stakeholder \& Value Elicitation}
+    };
+    \node[process, text width=3.2cm, align=center, right=of backlog] (planning) {
+        \textbf{Sprint Planning}\\
+        {\scriptsize Conceptual Engineering \& Value Hierarchy}
+    };
+    \node[process, text width=3.2cm, align=center, right=of planning] (execution) {
+        \textbf{Sprint Execution}\\
+        {\scriptsize Value-Sensitive Implementation}
+    };
+    \node[process, text width=3.2cm, align=center, below=of execution] (review) {
+        \textbf{Sprint Review}\\
+        {\scriptsize Empirical Value Validation}
+    };
+    \node[process, text width=3.2cm, align=center, left=of review] (retro) {
+        \textbf{Sprint Retrospective}\\
+        {\scriptsize Responsibility \& Value Tension Review}
+    };
+    \draw[arrow] (backlog) -- (planning);
+    \draw[arrow] (planning) -- (execution);
+    \draw[arrow] (execution) -- (review);
+    \draw[arrow] (review) -- (retro);
+    \draw[arrow] (retro) -- (backlog);
 \end{tikzpicture}
-\caption{TODO: add value hierarchy layer to the Agile loop.}
+\caption{TODO}
 \label{fig:agile-loop}
 \end{figure}
 
@@ -281,7 +311,7 @@ The correct role of Conceptual Engineering is not simply to ``define values'' on
 
 \subsection{From values to normative goals}
 
-The next expansion moves from value analysis to requirements engineering. Goal-Oriented Requirements Engineering (GORE) is used to represent stakeholder intentions as goals. In the ethics-aware adaptation literature, ethical values are represented as \textbf{normative goals} aligned with functional and adaptation goals, enabling analysis of trade-offs and conflicts \cite{silva_gore_sleec}.
+The next expansion of the model moves from value analysis to requirements engineering. Goal-Oriented Requirements Engineering (GORE) is used to represent stakeholder intentions as goals. In the ethics-aware adaptation literature, ethical values are represented as \textbf{normative goals} aligned with functional and adaptation goals, enabling analysis of trade-offs and conflicts \cite{silva_gore_sleec}.
 
 \paragraph{How the diagram expands.} The Agile-VSD diagram gains a requirements refinement branch:
 

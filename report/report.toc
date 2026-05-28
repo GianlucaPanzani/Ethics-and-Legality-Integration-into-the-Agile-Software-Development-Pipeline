@@ -7,7 +7,7 @@
 \contentsline {subsection}{\numberline {2.4}Responsibility, many hands, and the responsibility gap}{2}{subsection.2.4}%
 \contentsline {section}{\numberline {3}The Agile-VSD model}{2}{section.3}%
 \contentsline {subsection}{\numberline {3.1}The Agile sprint loop}{2}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Expansion with Value Sensitive Design (VSD)}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Expansion with Value Sensitive Design (VSD)}{2}{subsection.3.2}%
 \contentsline {paragraph}{How the diagram expands.}{3}{section*.2}%
 \contentsline {subsection}{\numberline {3.3}Stakeholder tokens and value source analysis}{3}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Connection to responsibility}{3}{subsection.3.4}%
@@ -15,8 +15,8 @@
 \contentsline {subsection}{\numberline {4.1}Why conceptual engineering is needed}{4}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Conceptual Engineering inside sprint planning}{4}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}First value hierarchy}{4}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Integration with the Agile-VSD loop}{5}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Expansion 1: Requirements Engineering through GORE and SLEEC}{5}{section.5}%
+\contentsline {subsection}{\numberline {4.4}Integration with the Agile-VSD loop}{4}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Requirements Engineering through GORE and SLEEC}{5}{section.5}%
 \contentsline {subsection}{\numberline {5.1}From values to normative goals}{5}{subsection.5.1}%
 \contentsline {paragraph}{How the diagram expands.}{5}{section*.3}%
 \contentsline {subsection}{\numberline {5.2}GORE artefacts}{5}{subsection.5.2}%
@@ -40,5 +40,5 @@
 \contentsline {subsection}{\numberline {8.1}Final layered model}{11}{subsection.8.1}%
 \contentsline {subsection}{\numberline {8.2}Traceability matrix}{11}{subsection.8.2}%
 \contentsline {section}{\numberline {9}Mapping Course Topics to the Pipeline}{12}{section.9}%
-\contentsline {section}{\numberline {10}Implementation Blueprint}{12}{section.10}%
+\contentsline {section}{\numberline {10}Implementation Blueprint}{13}{section.10}%
 \contentsline {section}{\numberline {11}Conclusion}{13}{section.11}%
