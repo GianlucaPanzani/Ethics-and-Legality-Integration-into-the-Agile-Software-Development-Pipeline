@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.12.28)  1 JUN 2026 13:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.12.28)  1 JUN 2026 18:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -863,11 +863,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 361--361
 [8]
 
 [9]
-<../diagram/agile9.pdf, id=495, 1206.5075pt x 459.7175pt>
+<../diagram/agile9.pdf, id=495, 1156.32pt x 607.30888pt>
 File: ../diagram/agile9.pdf Graphic file (type pdf)
 <use ../diagram/agile9.pdf>
 Package pdftex.def Info: ../diagram/agile9.pdf  used on input line 464.
-(pdftex.def)             Requested size: 455.24411pt x 173.45987pt.
+(pdftex.def)             Requested size: 455.24411pt x 239.09207pt.
 
 
 [10]
@@ -976,10 +976,10 @@ al/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local
 /texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/t
 exlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/tex
 live/2025/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on report.pdf (18 pages, 570685 bytes).
+Output written on report.pdf (18 pages, 560904 bytes).
 PDF statistics:
- 663 PDF objects out of 1000 (max. 8388607)
- 554 compressed objects within 6 object streams
+ 641 PDF objects out of 1000 (max. 8388607)
+ 541 compressed objects within 6 object streams
  129 named destinations out of 1000 (max. 500000)
  366 words of extra memory for PDF output out of 10000 (max. 10000000)
 
