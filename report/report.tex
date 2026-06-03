@@ -151,7 +151,7 @@ The pipeline proposed in this report addresses this by assigning responsibility 
 
 \subsection{The Agile sprint loop}
 
-The initial diagram is a standard Agile loop, of which an example could be find in Figure~\ref{fig:agile-loop}. Its strength is rapid iteration; its weakness is that values may remain implicit unless they are deliberately introduced into sprint artefacts.
+The initial diagram is a standard Agile loop, of which an example can be found in Figure~\ref{fig:agile-loop}. Its strength is rapid iteration; its weakness is that values may remain implicit unless they are deliberately introduced into sprint artefacts. For this reason, the backlog is not treated only as a queue of features: it is the first place where affected stakeholders, data sources, legal constraints, and foreseeable harms must become visible engineering inputs.
 
 \begin{figure}[ht]
 \centering
@@ -186,7 +186,7 @@ Value hierarchy & Backlog structure & Value $\rightarrow$ norm $\rightarrow$ req
 
 \subsection{Expansion with Value Sensitive Design (VSD)}
 
-Value Sensitive Design is useful here because it is not an external ethical audit added after implementation. It is a design approach that incorporates human values throughout design work. The Agile-VSD literature argues that VSD can be integrated into existing Agile workflows rather than replacing them; values can be represented and refined inside sprint planning, execution, evaluation, and backlog management \cite{umbrello_agile_vsd}. Figure~\ref{fig:agile-vsd} shows this integration by connecting stakeholder analysis, value elicitation, value-sensitive implementation, testing, review, and retrospective updates to the normal sprint loop.
+Value Sensitive Design is useful here because it is not an external ethical audit added after implementation. It is a design approach that incorporates human values throughout design work. The Agile-VSD literature argues that VSD can be integrated into existing Agile workflows rather than replacing them; values can be represented and refined inside sprint planning, execution, evaluation, and backlog management \cite{umbrello_agile_vsd}. Figure~\ref{fig:agile-vsd} shows this integration by connecting stakeholder analysis, value elicitation, value-sensitive implementation, testing, review, and retrospective updates to the normal sprint loop. The added AI risk and data-source inputs make the pipeline sensitive to a central problem of data-driven systems: behaviour may look correct while the underlying data selection, measurement categories, or optimisation target still encode bias, opacity, or privacy risk.
 
 \begin{figure}[ht]
 \centering
@@ -204,17 +204,19 @@ At this stage, \textbf{active responsibility} means preventing ethical blind spo
 
 \subsection{Why conceptual engineering is needed}
 
-A value such as privacy, autonomy, transparency, or fairness is too abstract to be directly implemented; so, different conceptualisations of the same value can imply different technical requirements. The Design for Values and Conceptual Engineering literature argues that value-based requirements engineering needs systematic conceptual work because different conceptions of abstract values lead to different design requirements \cite{veluwenkamp_ce}.
+A value such as privacy, autonomy, transparency, or fairness is too abstract to be directly implemented; so, different conceptualisations of the same value can imply different technical requirements. The Design for Values and Conceptual Engineering literature argues that value-based requirements engineering needs systematic conceptual work because different conceptions of abstract values lead to different design requirements \cite{veluwenkamp_ce}. This is also where the pipeline protects itself against purely syntactic compliance: a term may be accepted by a rule or a ticket template while still being semantically unclear for stakeholders, regulators, or operators.
 
 \subsection{Conceptual Engineering inside sprint planning}
 
-During planning, the team should run a short conceptual clarification step:
+During sprint planning, the team should run a short conceptual clarification step:
 
 \begin{enumerate}
     \item \textbf{Discovery}: how is the value currently understood by stakeholders and in the domain?
     \item \textbf{Justification}: does the current concept serve the intended moral, legal, and engineering function?
     \item \textbf{Construction}: which refined conception should be adopted for this system?
 \end{enumerate}
+
+In the integrated diagrams, this is represented as a CE loop inside sprint planning. The loop is deliberately placed before the sprint backlog is fixed: discovery gathers how a value is currently used, justification checks whether that use serves the moral, legal, and engineering purpose, and construction records the clarified concept that the team will implement. This prevents ambiguous values from silently becoming ambiguous requirements.
 
 \subsection{First value hierarchy}
 
@@ -243,7 +245,7 @@ For GDPR-relevant systems, this hierarchy should be aligned with Article~5 princ
 
 \subsection{From values to normative goals}
 
-The next expansion of the model moves from value analysis to requirements engineering. Goal-Oriented Requirements Engineering (GORE) is used to represent stakeholder intentions as goals. In the ethics-aware adaptation literature, ethical values are represented as \textbf{normative goals} aligned with functional and adaptation goals, enabling analysis of trade-offs and conflicts \cite{silva_gore_sleec}. In this stage, values are transformed into normative goals, connected to functional or adaptation goals, decomposed into tasks, and finally expressed as rules that can be reviewed and tested.
+The next expansion of the model moves from value analysis to requirements engineering. Goal-Oriented Requirements Engineering (GORE) is used to represent stakeholder intentions as goals. In the ethics-aware adaptation literature, ethical values are represented as \textbf{normative goals} aligned with functional and adaptation goals, enabling analysis of trade-offs and conflicts \cite{silva_gore_sleec}. In this stage, values are transformed into normative goals, connected to functional or adaptation goals, decomposed into tasks, and finally expressed as rules that can be reviewed and tested. GORE gives the pipeline a place to ask why a requirement exists, not only what the system must do; this matters when competing goals such as privacy, safety, usability, and accountability cannot all be maximised at the same time.
 
 \subsection{GORE artefacts}
 
@@ -259,7 +261,7 @@ A practical GORE model for this report should distinguish:
 
 \subsection{From normative goals to SLEEC rules}
 
-SLEEC rules translate normative goals into a form that is close to natural language but structured enough for automated analysis. In the cited SLEEC work, rules have the general form ''\texttt{when <condition> then <response> [within <time>] [unless <exception>]}'' \cite{silva_gore_sleec}.
+SLEEC rules translate normative goals into a form that is close to natural language but structured enough for automated analysis. In the cited SLEEC work, rules have the general form ''\texttt{when <condition> then <response> [within <time>] [unless <exception>]}'' \cite{silva_gore_sleec}. In the pipeline, SLEEC is the bridge between ethical language and executable control: it keeps the rule understandable for human review while making triggers, responses, deadlines, and exceptions precise enough for tests and monitors.
 
 \begin{lstlisting}[caption={Example SLEEC-style rule for GDPR deletion.}]
 rule delete_personal_data:
@@ -283,7 +285,7 @@ This stage is where values become technically actionable. However, the Chinese R
 
 \subsection{Integration with the Agile-VSD framework}
 
-Figure~\ref{fig:gore-sleec-detail} shows how the Agile-VSD loop is extended with a requirements refinement branch. Conceptual Engineering clarifies values during sprint planning, GORE turns them into normative goals, and SLEEC rules make them precise enough to feed the sprint backlog.
+Figure~\ref{fig:gore-sleec-detail} shows how the Agile-VSD loop is extended with a requirements refinement branch. Conceptual Engineering clarifies values during sprint planning, GORE turns them into normative goals, and SLEEC rules make them precise enough to feed the sprint backlog. The diagram therefore makes responsibility assignable: a concept is clarified by a team, a goal is accepted as normative, a rule is written, and a backlog item can later be traced back to those decisions.
 
 \begin{figure}[ht]
 \centering
@@ -301,7 +303,7 @@ The next expansion shifts the focus from requirements specification to the CI/CD
 
 \subsection{Integration with Agile-VSD and GORE-SLEEC}
 
-The previous requirements branch is connected to CI/CD gates. Normative goals and SLEEC rules become policy-as-code checks, those checks block or approve pipeline stages, and their decisions are stored as audit evidence.
+The previous requirements branch is connected to CI/CD gates. Normative goals and SLEEC rules become policy-as-code checks, those checks block or approve pipeline stages, and their decisions are stored as audit evidence. The CaC library in the diagram is the versioned memory of these rules: it prevents compliance from depending on informal recollection and makes policy changes reviewable like source code. The compliance gate is the point where the pipeline acts, because a failed legal, security, or ethical control can stop a release before harm reaches production. The audit evidence store gives the same process a backward-looking function, preserving policy decisions, exceptions, and deployment records so that responsibility does not disappear into the many-hands structure of DevOps.
 
 \begin{figure}[ht]
 \centering
@@ -332,7 +334,7 @@ The Deployflow source frames audit-ready DevOps pipelines around automatic loggi
 
 \subsection{Policy-as-Code tools}
 
-Policy-as-Code tools such as Open Policy Agent (OPA), HashiCorp Sentinel, Chef InSpec, and Cloud Custodian can express compliance constraints in executable form. For example:
+Policy-as-Code tools such as Open Policy Agent (OPA), HashiCorp Sentinel, Chef InSpec, and Cloud Custodian can express compliance constraints in executable form. In the model, these tools populate the CaC library rather than acting as isolated scripts. A retention rule, an encryption rule, or an access-control rule becomes part of a governed repository that can be tested, reviewed, versioned, and connected to audit evidence. For example:
 
 \begin{lstlisting}[caption={Illustrative OPA/Rego-style rule.}]
 deny[msg] {
@@ -361,7 +363,7 @@ This directly addresses the many-hands problem. Instead of relying on memory or 
 
 \subsection{Why AI requires a further expansion}
 
-AI systems add new sources of risk: training data may be biased, model behaviour may be statistically uncertain, the operational environment may diverge from the training environment, and performance may degrade after deployment. The responsible-AI software engineering roadmap highlights that responsible AI must be operationalised across governance, process, and system perspectives, not only at the algorithm level \cite{lu_responsible_ai}. It also emphasises continuous monitoring, co-versioning of data/model/code/configuration, audit trails, and dynamic ethical risk assessment during operation \cite{lu_responsible_ai}.
+AI systems add new sources of risk: training data may be biased, model behaviour may be statistically uncertain, the operational environment may diverge from the training environment, and performance may degrade after deployment. The responsible-AI software engineering roadmap highlights that responsible AI must be operationalised across governance, process, and system perspectives, not only at the algorithm level \cite{lu_responsible_ai}. It also emphasises continuous monitoring, co-versioning of data/model/code/configuration, audit trails, and dynamic ethical risk assessment during operation \cite{lu_responsible_ai}. The AI risk and data-source blocks in the diagrams express this shift: responsible AI begins before model training, when the team decides which data sources are legitimate, which affected groups may be represented or excluded, and which risks must enter the backlog.
 
 For AI systems, the DevOps pipeline must also manage data, training, validation, deployment, runtime monitoring, and possible retraining or rollback. These activities are treated as controlled engineering stages rather than informal ML experimentation.
 
@@ -369,31 +371,15 @@ For AI systems, the DevOps pipeline must also manage data, training, validation,
 
 For AI systems, especially high-risk systems, the W-shaped lifecycle is more appropriate than a simple V-model. The TAID white paper describes the AI W-shape as an expansion of the traditional V-model that accounts for the specificities of AI constituents, including the tight connection between the AI model and its pre/post-processing \cite{taid_whitepaper}. It distinguishes engineering processes on the \textbf{host platform} from those on the \textbf{target platform} \cite{taid_whitepaper}.
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=\textwidth]{../diagram/agile10.pdf}
-\caption{MLOps assurance view. Design-time assurance covers data validation, model training, model testing, model evaluation gates, compliance gates, and evidence collection before deployment; runtime assurance monitors drift, performance, safety-envelope violations, fallback mechanisms, and human escalation after deployment.}
-\label{fig:mlops-assurance}
-\end{figure}
-
 \subsection{Design-time assurance}
 
-Design-time assurance is performed before deployment and focuses on whether the AI constituent satisfies its allocated requirements. As shown in Figure~\ref{fig:mlops-assurance}, this phase includes dataset quality assessment and data lineage, bias and representativeness checks, model validation on independent test sets, robustness and generalisation analysis, explainability assessment, conformity checks against legal and organisational policies, and assurance cases linking claims, evidence, and residual risks.
+Design-time assurance is performed before deployment and focuses on whether the AI constituent satisfies its allocated requirements. As shown in Appendix Figure~\ref{fig:mlops-assurance}, this phase includes dataset quality assessment and data lineage, bias and representativeness checks, model validation on independent test sets, robustness and generalisation analysis, explainability assessment, conformity checks against legal and organisational policies, and assurance cases linking claims, evidence, and residual risks. The model evaluation gate is the key added control here: it prevents a trained model from being treated as acceptable merely because it runs, and instead asks whether the evidence supports deployment under the declared operational context.
 
 This phase primarily supports active responsibility: the organisation must demonstrate that foreseeable harms were analysed and mitigated before deployment.
 
 \subsection{Runtime assurance}
 
-Runtime assurance is performed after deployment and focuses on whether the deployed system remains trustworthy under actual operating conditions. Figure~\ref{fig:mlops-assurance} separates this runtime layer from the design-time gates and shows the monitoring and control mechanisms that remain active after deployment. It includes:
-
-\begin{itemize}
-    \item \textbf{data drift monitoring}: changes in input distributions;
-    \item \textbf{concept drift monitoring}: changes in the relationship between inputs and outputs;
-    \item \textbf{performance monitoring}: accuracy, latency, false positives/negatives, fairness metrics;
-    \item \textbf{safety envelope monitoring}: detection of states outside the approved operational design domain;
-    \item \textbf{fallback mechanisms}: rollback, safe mode, conservative decision logic;
-    \item \textbf{human escalation}: routing uncertain or high-impact decisions to qualified humans.
-\end{itemize}
+Runtime assurance is performed after deployment and focuses on whether the deployed system remains trustworthy under actual operating conditions. Appendix Figure~\ref{fig:mlops-assurance} separates this runtime layer from the design-time gates and shows the monitoring and control mechanisms that remain active after deployment. Data drift monitoring checks whether input distributions have changed, concept drift monitoring checks whether the relation between inputs and outputs has shifted, and performance monitoring follows accuracy, latency, error rates, and fairness metrics. Safety-envelope monitoring detects states outside the approved operational domain, while fallback mechanisms, rollback, conservative decision logic, and human escalation turn monitoring into corrective feedback rather than passive observation.
 
 Runtime assurance supports both active and passive responsibility. It actively prevents uncontrolled degradation and passively produces evidence for incident reconstruction.
 
@@ -404,6 +390,8 @@ Meaningful Human Control (MHC) is the mechanism that prevents technological auto
 \subsection{Final layered model}
 
 The final pipeline is not a single linear process. It is a layered architecture of artefacts and feedback loops.
+
+In Figure~\ref{fig:final-pipeline}, the AI risk and data-source inputs enter backlog refinement before sprint planning, so the system starts from the people, data, and harms that may be affected. Sprint planning then contains the CE loop, where ambiguous values are clarified before they become engineering commitments. GORE and SLEEC translate those commitments into goals and rules, the CaC library stores the executable policy version of those rules, and the compliance gate checks them during delivery. The audit evidence store preserves the decisions produced by these gates, while the model evaluation gate and runtime assurance blocks keep the AI component under control before and after deployment.
 
 \begin{figure}[ht]
 \centering
@@ -422,6 +410,15 @@ The result is a pipeline oriented toward \textbf{socio-technical trustworthiness
 
 \clearpage
 \appendix
+
+\section{MLOps Assurance Diagram}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{../diagram/agile10.pdf}
+\caption{MLOps assurance view. Design-time assurance covers data validation, model training, model testing, model evaluation gates, compliance gates, and evidence collection before deployment; runtime assurance monitors drift, performance, safety-envelope violations, fallback mechanisms, and human escalation after deployment.}
+\label{fig:mlops-assurance}
+\end{figure}
 
 \section{Traceability matrix}
 
