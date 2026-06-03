@@ -7,38 +7,33 @@
 \contentsline {subsection}{\numberline {2.4}Responsibility, many hands, and the responsibility gap}{2}{subsection.11}%
 \contentsline {section}{\numberline {3}The Agile-VSD model}{2}{section.12}%
 \contentsline {subsection}{\numberline {3.1}The Agile sprint loop}{2}{subsection.13}%
-\contentsline {subsection}{\numberline {3.2}Expansion with Value Sensitive Design (VSD)}{2}{subsection.15}%
-\contentsline {paragraph}{How the diagram expands.}{3}{section*.16}%
-\contentsline {subsection}{\numberline {3.3}Stakeholder tokens and value source analysis}{3}{subsection.18}%
-\contentsline {subsection}{\numberline {3.4}Connection to responsibility}{4}{subsection.20}%
-\contentsline {section}{\numberline {4}Conceptual Engineering and the First Value Hierarchy}{4}{section.21}%
-\contentsline {subsection}{\numberline {4.1}Why conceptual engineering is needed}{4}{subsection.22}%
-\contentsline {subsection}{\numberline {4.2}Conceptual Engineering inside sprint planning}{4}{subsection.23}%
-\contentsline {subsection}{\numberline {4.3}First value hierarchy}{4}{subsection.27}%
-\contentsline {subsection}{\numberline {4.4}Integration with the Agile-VSD loop}{5}{subsection.29}%
-\contentsline {section}{\numberline {5}Requirements Engineering through GORE and SLEEC}{5}{section.30}%
-\contentsline {subsection}{\numberline {5.1}From values to normative goals}{5}{subsection.31}%
-\contentsline {subsection}{\numberline {5.2}GORE artefacts}{5}{subsection.32}%
-\contentsline {subsection}{\numberline {5.3}From normative goals to SLEEC rules}{6}{subsection.33}%
-\contentsline {subsection}{\numberline {5.4}Testability and conflict detection}{6}{subsection.44}%
-\contentsline {subsection}{\numberline {5.5}Integration with the Agile-VSD framework}{6}{subsection.45}%
-\contentsline {section}{\numberline {6}DevOps and Compliance-as-Code}{6}{section.47}%
-\contentsline {subsection}{\numberline {6.1}From ethical requirements to pipeline controls}{6}{subsection.48}%
-\contentsline {subsection}{\numberline {6.2}Integration with Agile-VSD and GORE-SLEEC}{7}{subsection.49}%
-\contentsline {subsection}{\numberline {6.3}Shift-left compliance}{7}{subsection.51}%
-\contentsline {subsection}{\numberline {6.4}Policy-as-Code tools}{8}{subsection.52}%
-\contentsline {subsection}{\numberline {6.5}Active and passive responsibility in DevOps}{9}{subsection.65}%
-\contentsline {section}{\numberline {7}Expansion 3: MLOps and Runtime Assurance}{9}{section.66}%
-\contentsline {subsection}{\numberline {7.1}Why AI requires a further expansion}{9}{subsection.67}%
-\contentsline {paragraph}{How the diagram expands.}{9}{section*.68}%
-\contentsline {subsection}{\numberline {7.2}The W-shaped AI lifecycle}{9}{subsection.69}%
-\contentsline {subsection}{\numberline {7.3}Design-time assurance}{9}{subsection.70}%
-\contentsline {subsection}{\numberline {7.4}Runtime assurance}{10}{subsection.71}%
-\contentsline {subsection}{\numberline {7.5}Meaningful Human Control}{10}{subsection.72}%
-\contentsline {subsection}{\numberline {7.6}Connection to superintelligence and value alignment}{10}{subsection.73}%
-\contentsline {section}{\numberline {8}Integrated Final Pipeline}{11}{section.74}%
-\contentsline {subsection}{\numberline {8.1}Final layered model}{11}{subsection.75}%
-\contentsline {subsection}{\numberline {8.2}Traceability matrix}{11}{subsection.77}%
-\contentsline {section}{\numberline {9}Mapping Course Topics to the Pipeline}{12}{section.78}%
-\contentsline {section}{\numberline {10}Implementation Blueprint}{12}{section.79}%
-\contentsline {section}{\numberline {11}Conclusion}{13}{section.87}%
+\contentsline {subsection}{\numberline {3.2}Stakeholder tokens and value source analysis}{2}{subsection.15}%
+\contentsline {subsection}{\numberline {3.3}Expansion with Value Sensitive Design (VSD)}{3}{subsection.17}%
+\contentsline {subsection}{\numberline {3.4}Connection to responsibility}{3}{subsection.19}%
+\contentsline {section}{\numberline {4}Conceptual Engineering and the First Value Hierarchy}{4}{section.20}%
+\contentsline {subsection}{\numberline {4.1}Why conceptual engineering is needed}{4}{subsection.21}%
+\contentsline {subsection}{\numberline {4.2}Conceptual Engineering inside sprint planning}{4}{subsection.22}%
+\contentsline {subsection}{\numberline {4.3}First value hierarchy}{4}{subsection.26}%
+\contentsline {section}{\numberline {5}Requirements Engineering through GORE and SLEEC}{5}{section.28}%
+\contentsline {subsection}{\numberline {5.1}From values to normative goals}{5}{subsection.29}%
+\contentsline {subsection}{\numberline {5.2}GORE artefacts}{5}{subsection.30}%
+\contentsline {subsection}{\numberline {5.3}From normative goals to SLEEC rules}{5}{subsection.31}%
+\contentsline {subsection}{\numberline {5.4}Testability and conflict detection}{6}{subsection.42}%
+\contentsline {subsection}{\numberline {5.5}Integration with the Agile-VSD framework}{6}{subsection.43}%
+\contentsline {section}{\numberline {6}DevOps and Compliance-as-Code}{6}{section.45}%
+\contentsline {subsection}{\numberline {6.1}From ethical requirements to pipeline controls}{6}{subsection.46}%
+\contentsline {subsection}{\numberline {6.2}Integration with Agile-VSD and GORE-SLEEC}{7}{subsection.47}%
+\contentsline {subsection}{\numberline {6.3}Shift-left compliance}{7}{subsection.49}%
+\contentsline {subsection}{\numberline {6.4}Policy-as-Code tools}{8}{subsection.50}%
+\contentsline {subsection}{\numberline {6.5}Active and passive responsibility in DevOps}{8}{subsection.63}%
+\contentsline {section}{\numberline {7}MLOps and Runtime Assurance}{8}{section.64}%
+\contentsline {subsection}{\numberline {7.1}Why AI requires a further expansion}{8}{subsection.65}%
+\contentsline {subsection}{\numberline {7.2}The W-shaped AI lifecycle}{9}{subsection.66}%
+\contentsline {subsection}{\numberline {7.3}Design-time assurance}{9}{subsection.68}%
+\contentsline {subsection}{\numberline {7.4}Runtime assurance}{10}{subsection.69}%
+\contentsline {subsection}{\numberline {7.5}Meaningful Human Control}{10}{subsection.70}%
+\contentsline {subsection}{\numberline {7.6}Final layered model}{10}{subsection.71}%
+\contentsline {section}{\numberline {8}Conclusions}{10}{section.73}%
+\contentsline {section}{\numberline {A}Traceability matrix}{12}{appendix.74}%
+\contentsline {section}{\numberline {B}Mapping Course Topics to the Pipeline}{12}{appendix.75}%
+\contentsline {section}{\numberline {C}Implementation Blueprint}{13}{appendix.76}%
