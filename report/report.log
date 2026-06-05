@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.12.28)  5 JUN 2026 18:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.12.28)  5 JUN 2026 18:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -749,368 +749,222 @@ Package hyperref Info: Link coloring ON on input line 65.
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-(./report.toc)
+(./report.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 4.
+
+
+[1])
 \tf@toc=\write5
 \openout5 = `report.toc'.
 
 
 
-[1]
-
-LaTeX Warning: Citation `umbrello_agile_vsd' on page 1 undefined on input line 
-104.
-
-
-LaTeX Warning: Citation `veluwenkamp_ce' on page 1 undefined on input line 105.
-
-
-
-LaTeX Warning: Citation `silva_gore_sleec' on page 1 undefined on input line 10
-6.
-
-
-LaTeX Warning: Citation `bml_ethsecdevops' on page 1 undefined on input line 10
-7.
-
-
-LaTeX Warning: Citation `potharalanka_cac' on page 1 undefined on input line 10
-7.
-
-
-LaTeX Warning: Citation `singh_cac' on page 1 undefined on input line 107.
-
-
-LaTeX Warning: Citation `lu_responsible_ai' on page 1 undefined on input line 1
-07.
-
-
-LaTeX Warning: Citation `taid_whitepaper' on page 1 undefined on input line 107
-.
-
-
-LaTeX Warning: Citation `wiener_cybernetics' on page 1 undefined on input line 
-117.
-
-
-LaTeX Warning: Citation `turing_computing' on page 1 undefined on input line 12
-3.
-
-
+[2]
 
 [1
 
 ]
 
-LaTeX Warning: Citation `searle_chinese_room' on page 2 undefined on input line
- 125.
-
-
-LaTeX Warning: Citation `matthias_responsibility_gap' on page 2 undefined on in
-put line 133.
-
-
-
-[2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}]
-<../diagram/agile1.pdf, id=142, 845.1575pt x 181.67876pt>
+[2]
+<../diagram/agile1.pdf, id=251, 845.1575pt x 181.67876pt>
 File: ../diagram/agile1.pdf Graphic file (type pdf)
 <use ../diagram/agile1.pdf>
-Package pdftex.def Info: ../diagram/agile1.pdf  used on input line 163.
-(pdftex.def)             Requested size: 455.24411pt x 97.86388pt.
+Package pdftex.def Info: ../diagram/agile1.pdf  used on input line 159.
+(pdftex.def)             Requested size: 318.66948pt x 68.5036pt.
 
 
 [3 <../diagram/agile1.pdf>]
 
-LaTeX Warning: Citation `veluwenkamp_ce' on page 4 undefined on input line 180.
+[4]
+<../diagram/agile3.pdf, id=296, 1156.32pt x 607.30888pt>
+File: ../diagram/agile3.pdf Graphic file (type pdf)
+<use ../diagram/agile3.pdf>
+Package pdftex.def Info: ../diagram/agile3.pdf  used on input line 200.
+(pdftex.def)             Requested size: 364.19667pt x 191.27551pt.
 
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 198.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 198.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 198.
+[5{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+} <../diagram/agile3.pdf>]
+<../diagram/agile5.pdf, id=325, 1156.32pt x 607.30888pt>
+File: ../diagram/agile5.pdf Graphic file (type pdf)
+<use ../diagram/agile5.pdf>
+Package pdftex.def Info: ../diagram/agile5.pdf  used on input line 240.
+(pdftex.def)             Requested size: 364.19667pt x 191.27551pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--203
+
+[6]
+
+[7 <../diagram/agile5.pdf>]
+<../diagram/agile7.pdf, id=364, 1156.32pt x 607.30888pt>
+File: ../diagram/agile7.pdf Graphic file (type pdf)
+<use ../diagram/agile7.pdf>
+Package pdftex.def Info: ../diagram/agile7.pdf  used on input line 268.
+(pdftex.def)             Requested size: 364.19667pt x 191.27551pt.
+
+
+[8 <../diagram/agile7.pdf>]
+
+[9]
+<../diagram/agile9.pdf, id=419, 1156.32pt x 607.30888pt>
+File: ../diagram/agile9.pdf Graphic file (type pdf)
+<use ../diagram/agile9.pdf>
+Package pdftex.def Info: ../diagram/agile9.pdf  used on input line 310.
+(pdftex.def)             Requested size: 364.19667pt x 191.27551pt.
+
+
+[10 <../diagram/agile9.pdf>]
+<../diagram/agile10.pdf, id=442, 776.9025pt x 336.25626pt>
+File: ../diagram/agile10.pdf Graphic file (type pdf)
+<use ../diagram/agile10.pdf>
+Package pdftex.def Info: ../diagram/agile10.pdf  used on input line 330.
+(pdftex.def)             Requested size: 455.24411pt x 197.04005pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--344
 []|\T1/cmr/m/n/10.95 Meaningful user
  []
 
 
-Underfull \hbox (badness 1158) in paragraph at lines 205--205
+Underfull \hbox (badness 1158) in paragraph at lines 346--346
 \T1/cmr/m/n/10.95 sons for con-se-quen-tial de-ci-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
 []|\T1/cmr/m/n/10.95 Explanation ac-cep-
  []
 
-
-LaTeX Warning: Citation `gdpr_art5' on page 4 undefined on input line 212.
-
-
-LaTeX Warning: Citation `gdpr_art25' on page 4 undefined on input line 212.
-
-
-LaTeX Warning: Citation `edpb_dpbdd' on page 4 undefined on input line 212.
-
-
-LaTeX Warning: Citation `eu_ai_act' on page 4 undefined on input line 212.
-
-
-LaTeX Warning: Citation `ai_act_human_oversight' on page 4 undefined on input l
-ine 212.
-
-
-LaTeX Warning: Citation `umbrello_agile_vsd' on page 4 undefined on input line 
-216.
-
-
-
-[4]
-<../diagram/agile3.pdf, id=173, 1156.32pt x 607.30888pt>
-File: ../diagram/agile3.pdf Graphic file (type pdf)
-<use ../diagram/agile3.pdf>
-Package pdftex.def Info: ../diagram/agile3.pdf  used on input line 220.
-(pdftex.def)             Requested size: 455.24411pt x 239.09207pt.
-
-
-LaTeX Warning: Citation `silva_gore_sleec' on page 5 undefined on input line 23
-0.
-
-
-
-[5 <../diagram/agile3.pdf>]
-
-LaTeX Warning: Citation `silva_gore_sleec' on page 6 undefined on input line 24
-6.
-
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 248.
+nput line 356.
 
 
-[6]
-<../diagram/agile5.pdf, id=213, 1156.32pt x 607.30888pt>
-File: ../diagram/agile5.pdf Graphic file (type pdf)
-<use ../diagram/agile5.pdf>
-Package pdftex.def Info: ../diagram/agile5.pdf  used on input line 274.
-(pdftex.def)             Requested size: 455.24411pt x 239.09207pt.
+[11
 
-
-LaTeX Warning: Citation `potharalanka_cac' on page 7 undefined on input line 28
-4.
-
-
-LaTeX Warning: Citation `singh_cac' on page 7 undefined on input line 284.
-
-
-
-[7 <../diagram/agile5.pdf>]
-
-LaTeX Warning: Citation `deployflow_gdpr' on page 8 undefined on input line 290
-.
-
-
-LaTeX Warning: Citation `bml_ethsecdevops' on page 8 undefined on input line 29
-0.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
+ <../diagram/agile10.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 377--377
 []|\T1/cmr/m/n/10.95 Code / pre-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
+Underfull \hbox (badness 10000) in paragraph at lines 377--378
 []|\T1/cmr/m/n/10.95 commit meta-data, static-
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 297--298
+Underfull \hbox (badness 3407) in paragraph at lines 378--379
 []|\T1/cmr/m/n/10.95 SBOM, de-pen-dency re-port,
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 298--299
+Underfull \hbox (badness 1009) in paragraph at lines 379--380
 []|\T1/cmr/m/n/10.95 test re-port, model-card up-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+Underfull \hbox (badness 10000) in paragraph at lines 381--382
 []|\T1/cmr/m/n/10.95 deployment man-i-fest, IaC
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--301
+Underfull \hbox (badness 10000) in paragraph at lines 382--382
 []|\T1/cmr/m/n/10.95 runtime mon-i-tor-ing, au-dit
  []
 
 
 
-[8]
-<../diagram/agile7.pdf, id=240, 1156.32pt x 607.30888pt>
-File: ../diagram/agile7.pdf Graphic file (type pdf)
-<use ../diagram/agile7.pdf>
-Package pdftex.def Info: ../diagram/agile7.pdf  used on input line 333.
-(pdftex.def)             Requested size: 455.24411pt x 239.09207pt.
-
-
-LaTeX Warning: Citation `lu_responsible_ai' on page 9 undefined on input line 3
-43.
-
-
-LaTeX Warning: Citation `lu_responsible_ai' on page 9 undefined on input line 3
-43.
-
-
-LaTeX Warning: Citation `taid_whitepaper' on page 9 undefined on input line 349
-.
-
-
-LaTeX Warning: Citation `taid_whitepaper' on page 9 undefined on input line 349
-.
-
-
-
-[9]
-
-LaTeX Warning: Reference `fig:mlops-assurance' on page 10 undefined on input li
-ne 353.
-
-
-LaTeX Warning: Reference `fig:mlops-assurance' on page 10 undefined on input li
-ne 361.
-
-
-
-[10 <../diagram/agile7.pdf>]
-
-LaTeX Warning: Citation `taid_mhc' on page 11 undefined on input line 367.
-
-
-LaTeX Warning: Reference `fig:final-pipeline' on page 11 undefined on input lin
-e 371.
-
-<../diagram/agile9.pdf, id=298, 1156.32pt x 607.30888pt>
-File: ../diagram/agile9.pdf Graphic file (type pdf)
-<use ../diagram/agile9.pdf>
-Package pdftex.def Info: ../diagram/agile9.pdf  used on input line 375.
-(pdftex.def)             Requested size: 455.24411pt x 239.09207pt.
-
-
-[11]
-
-[12 <../diagram/agile9.pdf>]
-<../diagram/agile10.pdf, id=328, 776.9025pt x 336.25626pt>
-File: ../diagram/agile10.pdf Graphic file (type pdf)
-<use ../diagram/agile10.pdf>
-Package pdftex.def Info: ../diagram/agile10.pdf  used on input line 395.
-(pdftex.def)             Requested size: 455.24411pt x 197.04005pt.
-
-Underfull \hbox (badness 1082) in paragraph at lines 407--408
+[12]
+Underfull \hbox (badness 1082) in paragraph at lines 409--410
 []|\T1/cmr/m/n/10.95 Stakeholder work-shop
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 []|\T1/cmr/m/n/10.95 Conceptual de-ci-sion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--409
+Underfull \hbox (badness 10000) in paragraph at lines 411--411
 []|\T1/cmr/m/n/10.95 Normative state-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--410
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
 []|\T1/cmr/m/n/10.95 Legal map-ping to
  []
 
 
-Underfull \hbox (badness 4569) in paragraph at lines 410--410
+Underfull \hbox (badness 4569) in paragraph at lines 412--412
 []|\T1/cmr/m/n/10.95 Minimise personal-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--411
+Underfull \hbox (badness 10000) in paragraph at lines 413--413
 []|\T1/cmr/m/n/10.95 When un-nec-es-sary
  []
 
 
-Underfull \hbox (badness 5787) in paragraph at lines 411--411
+Underfull \hbox (badness 5787) in paragraph at lines 413--413
 \T1/cmr/m/n/10.95 field is re-quested,
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 412--412
+Underfull \hbox (badness 1748) in paragraph at lines 414--414
 []|\T1/cmr/m/n/10.95 Deny schema with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 413--413
+Underfull \hbox (badness 10000) in paragraph at lines 415--415
 []|\T1/cmr/m/n/10.95 Privacy re-gres-sion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 414--414
+Underfull \hbox (badness 10000) in paragraph at lines 416--416
 []|\T1/cmr/m/n/10.95 Retention/drift/
  []
 
 
-Underfull \hbox (badness 2376) in paragraph at lines 415--416
+Underfull \hbox (badness 2376) in paragraph at lines 417--418
 []|\T1/cmr/m/n/10.95 Approval record and
  []
 
-[13
 
- <../diagram/agile10.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 427--427
+Underfull \hbox (badness 10000) in paragraph at lines 429--429
 []|\T1/cmr/m/n/10.95 Cybernetics and be-
  []
 
 
-Underfull \hbox (badness 5203) in paragraph at lines 433--433
+Underfull \hbox (badness 5203) in paragraph at lines 435--435
 []|\T1/cmr/m/n/10.95 Legal frame-work and
  []
 
-
+[13]
 
 [14]
 
-[15]
-
-[16
+[15
 
 ]
 
-[17] (./report.aux)
+[16] (./report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: 373B89795832F0DDEC4F391200A24D47;5709
-(rerunfilecheck)             After:  CCF204D0526BDACFFFD0B190BBA5E7EB;7199.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: CE11CD0805BA6E8A75E66604EA11104C;7702.
  ) 
 Here is how much of TeX's memory you used:
- 24084 strings out of 473190
- 447629 string characters out of 5715799
- 913189 words of memory out of 5000000
- 46844 multiletter control sequences out of 15000+600000
- 569418 words of font info for 57 fonts, out of 8000000 for 9000
+ 24105 strings out of 473190
+ 447943 string characters out of 5715799
+ 937441 words of memory out of 5000000
+ 46861 multiletter control sequences out of 15000+600000
+ 570181 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,10n,87p,1073b,1092s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,10n,87p,1096b,1096s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb>
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></
 usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></us
@@ -1120,10 +974,10 @@ cal/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/loca
 l/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/
 texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/te
 xlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on report.pdf (19 pages, 580635 bytes).
+Output written on report.pdf (19 pages, 589962 bytes).
 PDF statistics:
- 493 PDF objects out of 1000 (max. 8388607)
- 408 compressed objects within 5 object streams
- 121 named destinations out of 1000 (max. 500000)
- 251 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 606 PDF objects out of 1000 (max. 8388607)
+ 520 compressed objects within 6 object streams
+ 124 named destinations out of 1000 (max. 500000)
+ 339 words of extra memory for PDF output out of 10000 (max. 10000000)
 

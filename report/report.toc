@@ -2,34 +2,37 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.2}%
 \contentsline {section}{\numberline {2}Conceptual Foundations}{1}{section.7}%
 \contentsline {subsection}{\numberline {2.1}Cybernetics: feedback as the organising principle}{1}{subsection.8}%
-\contentsline {subsection}{\numberline {2.2}The limits of the intelligence imitation of modern machines}{2}{subsection.9}%
+\contentsline {subsection}{\numberline {2.2}The limits of the intelligence imitation of modern machines}{1}{subsection.9}%
 \contentsline {subsection}{\numberline {2.3}Responsibility and the Problem of Many Hands}{2}{subsection.10}%
 \contentsline {section}{\numberline {3}Value Sensitive Design in Agile}{3}{section.11}%
 \contentsline {subsection}{\numberline {3.1}The Agile loop}{3}{subsection.12}%
 \contentsline {subsection}{\numberline {3.2}Stakeholder tokens and value source analysis}{3}{subsection.14}%
 \contentsline {subsection}{\numberline {3.3}Conceptual Engineering}{4}{subsection.15}%
 \contentsline {subsection}{\numberline {3.4}First value hierarchy}{4}{subsection.19}%
-\contentsline {subsection}{\numberline {3.5}Integration with the Agile model}{4}{subsection.21}%
-\contentsline {section}{\numberline {4}Requirements Engineering through GORE and SLEEC}{6}{section.23}%
-\contentsline {subsection}{\numberline {4.1}From values to Norms}{6}{subsection.24}%
-\contentsline {subsection}{\numberline {4.2}GORE artefacts}{6}{subsection.25}%
-\contentsline {subsection}{\numberline {4.3}From normative goals to SLEEC rules}{6}{subsection.26}%
-\contentsline {subsection}{\numberline {4.4}Testability and conflict detection}{7}{subsection.37}%
-\contentsline {subsection}{\numberline {4.5}Integration with the Agile-VSD model}{7}{subsection.38}%
-\contentsline {section}{\numberline {5}DevOps and Compliance-as-Code}{7}{section.40}%
-\contentsline {subsection}{\numberline {5.1}From ethical requirements to pipeline controls}{7}{subsection.41}%
-\contentsline {subsection}{\numberline {5.2}Shift-left compliance}{8}{subsection.42}%
-\contentsline {subsection}{\numberline {5.3}Policy-as-Code tools}{8}{subsection.43}%
-\contentsline {subsection}{\numberline {5.4}Integration with the Agile Normative-based model}{9}{subsection.56}%
-\contentsline {section}{\numberline {6}MLOps and Runtime Assurance}{9}{section.58}%
-\contentsline {subsection}{\numberline {6.1}Why AI requires a further expansion}{9}{subsection.59}%
-\contentsline {subsection}{\numberline {6.2}The W-shaped AI lifecycle}{10}{subsection.60}%
-\contentsline {subsection}{\numberline {6.3}Design-time assurance}{10}{subsection.61}%
-\contentsline {subsection}{\numberline {6.4}Runtime assurance}{11}{subsection.62}%
-\contentsline {subsection}{\numberline {6.5}Meaningful Human Control}{11}{subsection.63}%
-\contentsline {subsection}{\numberline {6.6}Final Agile Normative \& Risk-prevention based model}{11}{subsection.64}%
-\contentsline {section}{\numberline {7}Conclusions}{11}{section.66}%
-\contentsline {section}{\numberline {A}MLOps Assurance Diagram}{13}{appendix.67}%
-\contentsline {section}{\numberline {B}Traceability matrix}{13}{appendix.69}%
-\contentsline {section}{\numberline {C}Mapping Course Topics to the Pipeline}{14}{appendix.70}%
-\contentsline {section}{\numberline {D}Implementation Blueprint}{14}{appendix.71}%
+\contentsline {subsection}{\numberline {3.5}Integration with the Agile model}{4}{subsection.20}%
+\contentsline {section}{\numberline {4}Requirements Engineering through GORE and SLEEC}{5}{section.22}%
+\contentsline {subsection}{\numberline {4.1}From values to Norms}{5}{subsection.23}%
+\contentsline {subsection}{\numberline {4.2}GORE artefacts}{5}{subsection.24}%
+\contentsline {subsection}{\numberline {4.3}From normative goals to SLEEC rules}{6}{subsection.25}%
+\contentsline {subsection}{\numberline {4.4}Testability and conflict detection}{6}{subsection.26}%
+\contentsline {subsection}{\numberline {4.5}Integration with the Agile-VSD model}{6}{subsection.27}%
+\contentsline {section}{\numberline {5}DevOps and Compliance-as-Code}{6}{section.29}%
+\contentsline {subsection}{\numberline {5.1}From ethical requirements to pipeline controls}{6}{subsection.30}%
+\contentsline {subsection}{\numberline {5.2}Shift-left compliance}{7}{subsection.31}%
+\contentsline {subsection}{\numberline {5.3}Policy-as-Code tools}{7}{subsection.32}%
+\contentsline {subsection}{\numberline {5.4}Integration with the Agile Normative-based model}{7}{subsection.33}%
+\contentsline {section}{\numberline {6}MLOps and Runtime Assurance}{8}{section.35}%
+\contentsline {subsection}{\numberline {6.1}Why AI requires a further expansion}{8}{subsection.36}%
+\contentsline {subsection}{\numberline {6.2}The W-shaped AI lifecycle}{8}{subsection.37}%
+\contentsline {subsection}{\numberline {6.3}Design-time assurance}{9}{subsection.38}%
+\contentsline {subsection}{\numberline {6.4}Runtime assurance}{9}{subsection.39}%
+\contentsline {subsection}{\numberline {6.5}Meaningful Human Control}{9}{subsection.40}%
+\contentsline {subsection}{\numberline {6.6}Final Agile Normative \& Risk-prevention based model}{10}{subsection.41}%
+\contentsline {section}{\numberline {7}Conclusions}{10}{section.43}%
+\contentsline {section}{\numberline {A}MLOps Assurance Diagram}{11}{appendix.44}%
+\contentsline {section}{\numberline {B}Value Hierarchy Examples}{11}{appendix.46}%
+\contentsline {section}{\numberline {C}SLEEC Rule Examples}{11}{appendix.48}%
+\contentsline {section}{\numberline {D}Compliance-as-Code Examples}{12}{appendix.59}%
+\contentsline {section}{\numberline {E}Traceability matrix}{13}{appendix.72}%
+\contentsline {section}{\numberline {F}Mapping Course Topics to the Pipeline}{13}{appendix.73}%
+\contentsline {section}{\numberline {G}Implementation Blueprint}{14}{appendix.74}%
