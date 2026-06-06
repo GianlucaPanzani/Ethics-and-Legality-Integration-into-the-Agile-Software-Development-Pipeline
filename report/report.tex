@@ -96,15 +96,15 @@
 
 Modern software systems increasingly operate as socio-technical infrastructures: they do not merely execute functions, but mediate access to services, process personal data, automate decisions, and shape organisational behaviour. For this reason, a software pipeline cannot be evaluated only in terms of functional correctness, delivery speed, or security. It must also make ethical values and legal obligations explicit, traceable, testable, and monitorable.
 
-This report proposes a progressive engineering model for integrating ethics and legality into a contemporary software development DevOps pipeline. The model starts from an Agile sprint loop in which the most of the backward arrows are implicit because of the iterative nature of Agile development and to simplify the diagram.
+This report proposes a progressive engineering model for integrating ethics and legality into a contemporary software development pipeline. The model starts from an Agile sprint loop; to keep the diagrams readable, some feedback arrows are left implicit because iteration is already part of the Agile process.
 
 The Agile loop is expanded through four layers:
 
 \begin{enumerate}
-    \item \textbf{Agile based on Value Sensitive Design (VSD) and Conceptual Engineering (CE)} \cite[Ch.~13]{umbrello_agile_vsd}, \cite[Secs.~2--4]{veluwenkamp_ce}: values and stakeholders enter the backlog, while ambiguous values are clarified before becoming requirements.
-    \item \textbf{GORE + SLEEC} \cite[Secs.~3--4]{silva_gore_sleec}: values become normative goals and then formal, testable rules.
-    \item \textbf{Compliance-as-Code (CaC)} \cite[Sec.~Implementation]{bml_ethsecdevops}, \cite[Secs.~3--4]{potharalanka_cac}, \cite[Secs.~4--5]{singh_cac}: ethical and legal requirements are enforced through CI/CD gates, policy engines, and audit evidence.
-    \item \textbf{MLOps + Runtime Assurance} \cite[Secs.~3--5]{lu_responsible_ai}, \cite[Secs.~5.2.3--5.2.5 and~9.2.3]{taid_whitepaper}: AI-specific risks are controlled through model evaluation, monitoring, and human oversight.
+    \item \textbf{Value Sensitive Design (VSD) and Conceptual Engineering (CE)} \cite[Secs.~2--4]{veluwenkamp_ce}, \cite[Secs.~3--4]{lu_responsible_ai}: values and stakeholders enter the backlog, while ambiguous values are clarified before becoming requirements.
+    \item \textbf{GORE + SLEEC} \cite[Secs.~3.1--3.3]{silva_gore_sleec}: value-derived norms are translated into normative goals and then into formal, testable rules.
+    \item \textbf{Compliance-as-Code (CaC)} \cite[Secs.~2--4]{cac}: ethical and legal requirements are translated into CI/CD gates, policy engines, and audit evidence.
+    \item \textbf{MLOps + Runtime Assurance} \cite[Secs.~3--5]{lu_responsible_ai}, \cite[Secs.~5.2.3--5.2.5 and~8.4.2.2]{taid_whitepaper}: AI-specific risks are controlled through model evaluation, monitoring, runtime assurance, and human oversight.
 \end{enumerate}
 
 The central thesis is that responsible software engineering requires a shift from \emph{late ethical review} to \emph{continuous ethical and legal assurance}.
@@ -112,41 +112,17 @@ The central thesis is that responsible software engineering requires a shift fro
 
 \section{Conceptual Foundations}
 
-\subsection{Cybernetics: feedback as the organising principle}
+\subsection{Feedback as the organising principle}
 
-The proposed pipeline is cybernetic in structure \cite[Ch.~4]{wiener_cybernetics}. It is organised around feedback loops that compare observed behaviour with desired goals and then correct the system or the process. Agile retrospectives, CI test failures, policy violations, model drift alerts, incident postmortems, and human override mechanisms all instantiate negative feedback.
+The proposed pipeline is based on feedback loops that compare observed behaviour with desired goals and then correct the system or the process. Agile retrospectives, CI test failures, policy violations, model drift alerts, incident postmortems, and human override mechanisms all instantiate negative feedback.
 
 This matters because ethical and legal compliance cannot be treated as a static checklist. Values evolve, stakeholders reinterpret impacts, operational environments change, and AI models degrade or behave unexpectedly. Therefore, the pipeline must repeatedly evaluate also if the system still satisfies its goals.
 
-\subsection{The limits of the intelligence imitation of modern machines}
-
-The Turing-test tradition frames intelligence behaviourally \cite[Sec.~1]{turing_computing}: a machine may appear intelligent if its outputs are indistinguishable from those of a human. However, software engineering for responsible AI cannot rely only on output imitation. A system may produce convincing behaviour while still violating privacy, amplifying bias, or hiding causal responsibility. The distinction between weak and strong AI is therefore operationally relevant: most deployed AI systems should be engineered as powerful decision-support artefacts, not as autonomous moral subjects.
-
-Also the Searle's Chinese Room argument is useful as a warning for formal compliance \cite[pp.~417--420]{searle_chinese_room}. A rule engine may manipulate symbols correctly while lacking semantic understanding of the underlying value. This is not an argument against formalisation; rather, it shows why formal rules must remain connected to stakeholder interpretation, domain expertise, legal review, and human oversight. In the proposed pipeline, SLEEC rules and policy-as-code are therefore treated as \emph{engineering artefacts requiring governance}, not as replacements for judgement.
-
 \subsection{Responsibility and the Problem of Many Hands}
 
-\textbf{Active responsibility} becomes operational through blocking controls: the pipeline prevents non-compliant artefacts from reaching production. \textbf{Passive responsibility} becomes operational through evidence: every policy decision, exception, deployment, and runtime alert is logged for later audit and accountability. Both are needed because development requires forward-looking prevention, while deployment requires reconstructable evidence when a release, model, monitor, or human override must be reviewed after the fact.
+Modern pipelines distribute action across product owners, developers, data engineers, security engineers, ML engineers, legal experts, platform teams, policy engines, and runtime systems. This creates the classic problem of ``many hands'': outcomes are collectively produced, while accountability may become diffuse. In AI systems, the problem is amplified because harmful decisions may depend not only on explicit code, but also on training data, model design, deployment conditions, and runtime adaptation \cite{matthias_responsibility_gap}.
 
-This directly addresses the many-hands problem. Instead of relying on memory or informal coordination, the pipeline records decisions and makes responsibility attributable at the artefact level.
-
-Modern pipelines distribute action across product owners, developers, data engineers, security engineers, ML engineers, legal teams, platform teams, policy engines, and runtime systems. This generates the classic problem of ``many hands'': outcomes are collectively produced, but accountability can become diffuse. In AI systems, this may create a \textbf{responsibility gap}, especially when decisions emerge from blackbox models from which is hard to identify a responsible party \cite[pp.~175--182]{matthias_responsibility_gap}.
-
-The pipeline proposed in this report addresses the responsibility gap by introducing
-an explicit \textbf{RACI Matrix} after the definition of the \textit{Sprint Backlog} and before
-the CI/CD pipeline. Once the value-derived norms, GORE/SLEEC rules, technical tasks,
-and compliance controls have been selected for the sprint, the RACI Matrix assigns
-clear responsibility roles to the relevant actors.
-Responsible is the actor who performs the task or implements the control;
-Accountable is the actor who owns the final decision or approval;
-Consulted are the actors whose expertise is required, such as legal, ethics, domain, or security experts;
-Informed are the actors who must be kept aware of decisions, failures, exceptions, or residual risks.
-
-In this way, responsibility is not left implicit in the technical pipeline.
-This reduces the risk that accountability becomes diffuse across the many actors
-involved in the development and operation of an AI-enabled software system.
-It also connects active responsibility to the actors who must prevent failures during development, and passive responsibility to the actors who must justify decisions after deployment.
-
+The proposed model addresses this issue through a \textbf{RACI Matrix} placed after the \textit{Sprint Backlog} and before execution. At that point, value-derived norms, GORE/SLEEC rules, technical tasks, CaC policies, and assurance controls have already been selected for the sprint. The RACI Matrix then assigns who is \textit{Responsible} for performing a task, who is \textit{Accountable} for the final decision, who must be \textit{Consulted}, and who must be \textit{Informed}. This supports active responsibility by clarifying who must prevent failures, and passive responsibility by ensuring that decisions, exceptions, deployments, and runtime alerts can later be reconstructed from evidence.
 
 \section{Value Sensitive Design in Agile}
 
@@ -163,37 +139,21 @@ The initial diagram is a standard Agile loop, of which an example can be found i
 
 \subsection{Stakeholder tokens and value source analysis}
 
-Within the proposed pipeline, stakeholder tokens and value source analysis are both performed inside the \textit{Value Elicitation} activity of the \textit{Backlog Refinement} phase. This activity is not intended to produce final technical requirements directly. Rather, it enriches the backlog with an explicit understanding of the actors affected by the system and of the values that should constrain the resulting user stories.
+Within the proposed pipeline, stakeholder tokens and value source analysis are performed inside the \textit{Value Elicitation} activity of \textit{Backlog Refinement}. Stakeholder tokens make affected actors visible during discussion, including direct users, data subjects, maintainers, regulators, vulnerable groups, non-users, and indirectly affected communities. Value source analysis clarifies where values come from: stakeholder expectations, legal duties, organisational principles, professional codes, domain standards, social expectations, and risk assessments.
 
-Stakeholder tokens make affected actors visible during discussion, preventing the team from considering only the primary user or the customer. In this report, they are interpreted as a practical way to keep track of direct users, data subjects, maintainers, regulators, vulnerable groups, non-users, and indirectly affected communities while backlog items are being refined.
-
-Value source analysis complements this by clarifying where the relevant values originate. These sources may include stakeholder expectations, legal requirements, organisational principles, professional codes, domain standards, social expectations, and risk assessments. In practice, stakeholder tokens help identify whose interests must be represented, while value source analysis explains why values such as privacy, fairness, transparency, or autonomy should constrain specific user stories.
-
-The output of \textit{Value Elicitation} is therefore a set of values associated with the backlog which are transformed into norms (as we'll see in the next chapters) and then into user stories. Then they can be clarified through Conceptual Engineering and refined into GORE/SLEEC requirements.
+The output is not yet a technical requirement. It is a set of value-derived norms associated with the backlog. These norms constrain user stories and can later be clarified through Conceptual Engineering and refined into GORE/SLEEC requirements.
 
 \subsection{Conceptual Engineering}
 
-A value such as privacy, autonomy, transparency, or fairness is too abstract to be directly implemented; so, different conceptualisations of the same value can imply different technical requirements. The Design for Values and Conceptual Engineering literature argues that value-based requirements engineering needs systematic conceptual work because different conceptions of abstract values lead to different design requirements \cite[Secs.~2--4]{veluwenkamp_ce}. This is also where the pipeline protects itself against purely syntactic compliance: a term may be accepted by a rule or a ticket template while still being semantically unclear for stakeholders, regulators, or operators.
+Values such as privacy, autonomy, transparency, and fairness are too abstract to be implemented directly. The Design for Values and Conceptual Engineering literature argues that different conceptualisations of the same value can lead to different design requirements \cite[Secs.~2--4]{veluwenkamp_ce}. For this reason, the model places a CE loop inside \textit{Sprint Planning}, before the \textit{Sprint Backlog} is fixed.
 
-During sprint planning, the team should run a short conceptual clarification step:
+The loop has three steps: \textbf{Discovery}, which examines how a value is currently understood by stakeholders and in the domain; \textbf{Justification}, which asks whether that concept serves the intended moral, legal, and engineering function; and \textbf{Construction}, which records the refined concept to be adopted for the system. The output is a value hierarchy that links an abstract value to a norm, then to a design requirement and to a later verification artefact. 
 
-\begin{enumerate}
-    \item \textbf{Discovery}: how is the value currently understood by stakeholders and in the domain?
-    \item \textbf{Justification}: does the current concept serve the intended moral, legal, and engineering function?
-    \item \textbf{Construction}: which refined conception should be adopted for this system?
-\end{enumerate}
-
-In the integrated diagrams, this is represented by the \textit{Discovery phase}, \textit{Justification phase}, and \textit{Construction phase} inside \textit{Sprint Planning}. The loop is deliberately placed before the \textit{Sprint Backlog} is fixed: discovery gathers how a value is currently used, justification checks whether that use serves the moral, legal, and engineering purpose, and construction records the clarified concept that the team will implement. This prevents ambiguous values from silently becoming ambiguous requirements.
-
-\subsection{First value hierarchy}
-
-The first stable artefact is a value hierarchy. It is produced during \textit{Sprint Planning}, after \textit{Value Elicitation} has identified relevant values and Conceptual Engineering has clarified their meaning. Therefore, it is not yet a GORE model or a SLEEC rule: it is the bridge that connects each abstract value to a more concrete norm, then to a design requirement, and finally to a verification artefact that can be checked during development. Appendix Table~\ref{tab:value-hierarchy-examples} gives illustrative examples.
-
-For GDPR-relevant systems, this hierarchy has legal implications because the chosen norms must preserve Article~5 principles such as lawfulness, fairness, transparency, purpose limitation, data minimisation, accuracy, storage limitation, integrity/confidentiality, and accountability, and must support Article~25 data protection by design and by default \cite[Art.~5]{gdpr_art5}, \cite[Art.~25]{gdpr_art25}, \cite[Secs.~2--3]{edpb_dpbdd}. For AI systems, the same hierarchy also prepares later controls for the AI Act's risk-based framework and for human oversight of high-risk AI systems \cite[Sec.~Risk-based approach]{eu_ai_act}, \cite[Art.~14]{ai_act_human_oversight}. In practice, this means that a value such as privacy or autonomy must already be traceable before it becomes a \textit{GORE Normative Goals} item, a \textit{SLEEC Rules} item, or a policy gate.
+This hierarchy also supports legal compliance. For GDPR-relevant systems, values must be traceable to principles such as fairness, transparency, data minimisation, integrity/confidentiality, and accountability, as well as to data protection by design and by default \cite[Arts.~5 and~25]{gdpr_2016_679}, \cite{edpb_guidelines_4_2019}. For AI systems, the same hierarchy prepares later controls for the AI Act's risk-based framework and human oversight requirements \cite[Art.~14]{ai_act_2024_1689}.
 
 \subsection{Integration with the Agile model}
 
-Value Sensitive Design and Conceptual Engineering are useful here because are not an external ethical audit added after implementation. It is a design approach that incorporates human values throughout design work. The Agile-VSD literature argues that VSD can be integrated into existing Agile workflows rather than replacing them; values can be represented and refined inside sprint planning, model evaluation and backlog management \cite[Secs.~13.4--13.5]{umbrello_agile_vsd}. Figure~\ref{fig:agile-vsd} shows this integration by connecting stakeholder analysis, \textit{Value Elicitation}, value-sensitive implementation, testing, review, and retrospective updates to the normal sprint loop. The added \textit{AI Risks \& Data Sources} input makes the pipeline sensitive to a central problem of data-driven systems: behaviour may look correct while the underlying data selection, measurement categories, or optimisation target still encode bias, opacity, or privacy risk.
+VSD and CE are integrated into Agile rather than added as an external audit. The Agile-VSD literature shows that values can be introduced into planning, execution, evaluation, and backlog management \cite[Secs.~2--4]{veluwenkamp_ce}. Figure~\ref{fig:agile-vsd} represents this by connecting value elicitation, conceptual clarification, value-sensitive implementation, review, and retrospective improvement to the normal sprint loop. The \textit{AI Risks \& Data Sources} input extends this logic to data-driven systems, where bias, opacity, privacy risk, or exclusion can arise from the data and modelling choices before any code is deployed.
 
 \begin{figure}[ht]
 \centering
@@ -202,38 +162,23 @@ Value Sensitive Design and Conceptual Engineering are useful here because are no
 \label{fig:agile-vsd}
 \end{figure}
 
-
 \section{Requirements Engineering through GORE and SLEEC}
 
 \subsection{From values to Norms}
 
-The next expansion of the model moves from value analysis to requirements engineering. Goal-Oriented Requirements Engineering (GORE) is used to represent stakeholder intentions as goals. In the ethics-aware adaptation literature, ethical values are represented as \textbf{normative goals} aligned with functional and adaptation goals, enabling analysis of trade-offs and conflicts \cite[Sec.~3]{silva_gore_sleec}. In this stage, values are transformed into normative goals, connected to functional or adaptation goals, decomposed into tasks, and finally expressed as rules that can be reviewed and tested. GORE gives the pipeline a place to ask why a requirement exists, not only what the system must do; this matters when competing goals such as privacy, safety, usability, and accountability cannot all be maximised at the same time.
+The next expansion of the model moves from value analysis to requirements engineering. Goal-Oriented Requirements Engineering (GORE) is used to represent stakeholder intentions as goals. In the ethics-aware adaptation literature, ethical values are represented as \textbf{normative goals} aligned with functional and adaptation goals, enabling analysis of trade-offs and conflicts \cite[Sec.~3]{silva_gore_sleec}. In this stage, values are translated into normative goals, connected to functional or adaptation goals, decomposed into tasks, and finally expressed as rules that can be reviewed and tested. GORE gives the pipeline a place to ask why a requirement exists, not only what the system must do; this matters when competing goals such as privacy, safety, usability, and accountability cannot all be maximised at the same time.
 
-\subsection{GORE artefacts}
+\subsection{GORE artefacts and SLEEC rules}
 
-A GORE model should distinguish the following types of goals and conditions \cite[Sec.~3]{silva_gore_sleec}:
+A GORE model distinguishes normative goals, functional goals, adaptation goals, obstacles, and trade-offs \cite[Sec.~3.2]{silva_gore_sleec}. This distinction is useful because ethical and legal concerns rarely appear alone: privacy, safety, usability, and accountability often constrain the same feature in different ways.
 
-\begin{itemize}
-    \item \textbf{Normative goals}: obligations grounded in values, law, or institutional principles.
-    \item \textbf{Functional goals}: services the system must provide.
-    \item \textbf{Adaptation goals}: how the system changes behaviour under context changes.
-    \item \textbf{Obstacles}: conditions that prevent goal satisfaction.
-    \item \textbf{Trade-offs}: when there are conflicts between goals (e.g. privacy versus safety).
-\end{itemize}
+SLEEC rules translate normative goals into a form that is close to natural language but structured enough for analysis. In the cited work, the DSL background defines rules with the general form ''\texttt{when <condition> then <response> [within <time>] [unless <exception>]}'' \cite[Sec.~2]{silva_gore_sleec}. In the pipeline, \textit{SLEEC Rules} are the bridge between human review and executable control: they make triggers, responses, deadlines, and exceptions precise enough to guide acceptance tests, runtime monitors, and CaC policies. Appendix Listings~\ref{lst:sleec-erasure} and~\ref{lst:sleec-human-review} give illustrative examples.
 
-\subsection{From normative goals to SLEEC rules}
-
-SLEEC rules translate normative goals into a form that is close to natural language but structured enough for automated analysis. In the cited SLEEC work, rules have the general form ''\texttt{when <condition> then <response> [within <time>] [unless <exception>]}'' \cite[Sec.~4]{silva_gore_sleec}. In the pipeline, \textit{SLEEC Rules} are the bridge between ethical language and executable control: they keep rules understandable for human review while making triggers, responses, deadlines, and exceptions precise enough for tests and monitors. Appendix Listings~\ref{lst:sleec-erasure} and~\ref{lst:sleec-human-review} give two illustrative examples.
-
-\subsection{Testability and conflict detection}
-
-SLEEC-style rules improve engineering quality because they support well-formedness checking, conflict detection between rules, mapping to acceptance tests, mapping to runtime monitors, and review by non-technical stakeholders. In fact it can be viewed as a bridge between the ethical language of values and the technical language of code, allowing a better communication between developers and stakeholders.
-
-This stage is where values become technically actionable. However, the Chinese Room argument still applies: formal rules must remain explainable and reviewable, because syntactic rule execution does not guarantee semantic adequacy.
+This stage translates values into technically actionable constraints, but the rules must remain explainable and reviewable. Formal rule execution alone does not guarantee that the underlying value has been interpreted correctly.
 
 \subsection{Integration with the Agile-VSD model}
 
-Figure~\ref{fig:gore-sleec-detail} shows how the Agile-VSD loop is extended with a requirement engineering branch. Conceptual Engineering clarifies values during \textit{Sprint Planning}, \textit{GORE Normative Goals} turn them into normative goals, and \textit{SLEEC Rules} make them precise enough to feed the \textit{Sprint Backlog}. The diagram therefore makes responsibility assignable: each value is transformed into a concept (CE), each concept into one or more normative goals (GORE), and for each one a rule is written (SLEEC).
+Figure~\ref{fig:gore-sleec-detail} shows how the Agile-VSD loop is extended with a requirements branch. Conceptual Engineering clarifies ambiguous values during \textit{Sprint Planning}; \textit{GORE Normative Goals} translate them into structured goals; and \textit{SLEEC Rules} express them as reviewable rules that feed the \textit{Sprint Backlog} and later the CI/CD checks. This makes responsibility more assignable because each value can be traced to a concept, a goal, a rule, and eventually a test or policy.
 
 \begin{figure}[ht]
 \centering
@@ -242,31 +187,26 @@ Figure~\ref{fig:gore-sleec-detail} shows how the Agile-VSD loop is extended with
 \label{fig:gore-sleec-detail}
 \end{figure}
 
-
 \section{DevOps and Compliance-as-Code}
 
-\subsection{From ethical requirements to pipeline controls}
+\subsection{CaC integration in CI/CD pipeline}
 
-The next expansion shifts the focus from requirements specification to the DevOps CI/CD pipeline. Compliance-as-Code (CaC) expresses legal and organisational compliance requirements as executable, version-controlled, testable policy artefacts. The CaC literature describes this as a shift from document-centric and retrospective compliance toward programmatic controls embedded directly in the software delivery lifecycle \cite[Secs.~2--4]{potharalanka_cac}, \cite[Secs.~3--5]{singh_cac}.
+The next expansion moves from requirements specification to the DevOps CI/CD pipeline. Compliance-as-Code (CaC) expresses legal and organisational controls as executable, version-controlled, testable policy artefacts. The CaC literature describes this as a shift from document-centric and retrospective compliance toward programmatic controls embedded directly in the software delivery lifecycle \cite[Secs.~2--4]{cac}.
 
-\subsection{Shift-left compliance}
-
-Shift-left compliance means that checks are executed as early as possible, ideally before code reaches production. CaC should be integrated at multiple points, as defined in Appendix Table~\ref{tab:cac-controls}.
-
-The Deployflow source describes an audit-ready DevOps pipeline as a pipeline that does not rely on manual evidence collection after the fact. Instead, it automatically records relevant actions, preserves tamper-resistant evidence, controls access through Role-Based Access Control (RBAC), enforces security measures such as encryption, monitors the system continuously, and produces audit reports from the information already collected during development and deployment. In this sense, the pipeline makes each change repeatable, traceable, and auditable \cite[Sec.~Audit-Ready Pipelines in Action]{deployflow_gdpr}. The EthSecDevOps article published by BML Global reinforces the same direction from an ethical perspective: ethics should be treated as a first-class concern, with early value assessment, stakeholder analysis, ethical code reviews, fairness testing, ethical deployment checklists, and continuous monitoring \cite[Secs.~Implementing Ethics in the Development Pipeline and Deployment and Operations]{bml_ethsecdevops}.
+The design objective is \textit{shift-left compliance}: checks should run as early as possible, before defects or violations reach production. The web sources used here support the same direction. Deployflow frames audit-ready DevOps around automatic logging, immutable records, RBAC, encryption, monitoring, and audit reports \cite{deployflow_gdpr_devops}; the BML Global EthSecDevOps article adds early value assessment, stakeholder analysis, ethical code reviews, fairness testing, deployment checklists, and continuous monitoring \cite{bml_ethsecdevops}.
 
 \subsection{Policy-as-Code tools}
 
-Policy-as-Code tools such as Open Policy Agent (OPA), HashiCorp Sentinel, Chef InSpec, and Cloud Custodian can express compliance constraints in executable form. In the model, these tools populate the \textit{CaC Policy Library} rather than acting as isolated scripts. A retention rule, an encryption rule, or an access-control rule becomes part of a governed repository that can be tested, reviewed, versioned, and connected to audit evidence. Appendix Listings~\ref{lst:opa-encryption} and~\ref{lst:opa-retention} show two illustrative examples.
+Policy-as-Code tools such as Open Policy Agent (OPA), HashiCorp Sentinel, Chef InSpec, and Cloud Custodian express compliance constraints in executable form. In the model, these tools populate the \textit{CaC Policy Library}: a governed repository where retention, encryption, access-control, or SLEEC-derived rules can be reviewed, versioned, tested, and connected to audit evidence. Appendix Listings~\ref{lst:opa-encryption} and~\ref{lst:opa-retention} show two illustrative examples.
 
 \subsection{Integration with the Agile Normative-based model}
 
-The previous requirements branch is connected to CI/CD gates. \textit{GORE Normative Goals} and \textit{SLEEC Rules} become policy-as-code checks, those checks block or approve pipeline stages, and their decisions are stored as audit evidence. The \textit{CaC Policy Library} in the diagram is the versioned memory of these rules: it prevents compliance from depending on informal recollection and makes policy changes reviewable like source code. The \textit{Compliance Gate} is the point where the pipeline acts, because a failed legal, security, or ethical control can stop a release before harm reaches production. The \textit{Audit Evidence Store} gives the same process a backward-looking function, preserving policy decisions, exceptions, and deployment records.
+The previous requirements branch is connected to CI/CD gates. \textit{GORE Normative Goals} and \textit{SLEEC Rules} are translated into policy-as-code checks; those checks block or approve pipeline stages, and their decisions are stored as audit evidence. The \textit{CaC Policy Library} in the diagram is the versioned memory of these rules: it prevents compliance from depending on informal recollection and makes policy changes reviewable like source code. The \textit{Quality / CaC Assurance Gate} is the point where the pipeline acts, because a failed legal, security, or ethical control can stop a release before harm reaches production. The \textit{Audit Evidence Store} gives the same process a backward-looking function, preserving policy decisions, exceptions, and deployment records.
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.80\textwidth]{../diagram/agile7.pdf}
-\caption{CI/CD expansion showing how compliance checks and audit evidence become part of the delivery process.}
+\caption{CI/CD expansion showing how compliance checks and audit evidence are integrated into the delivery process.}
 \label{fig:cac-pipeline}
 \end{figure}
 
@@ -275,35 +215,29 @@ The previous requirements branch is connected to CI/CD gates. \textit{GORE Norma
 
 \subsection{Why AI requires a further expansion}
 
-AI systems add new sources of risk: training data may be biased, model behaviour may be statistically uncertain, the operational environment may diverge from the training environment, and performance may degrade after deployment. The responsible-AI software engineering roadmap highlights that responsible AI must be operationalised across governance, process, and system perspectives, not only at the algorithm level \cite[Secs.~3--5]{lu_responsible_ai}. It also emphasises continuous and iterative monitoring, co-versioning of data/model/code/configuration, audit trails, and dynamic ethical risk assessment during operation \cite[Sec.~4.1]{lu_responsible_ai}. The \textit{AI Risks \& Data Sources} block in the diagram expresses this shift: responsible AI begins before model training, when the team decides which data sources are legitimate, which affected groups may be represented or excluded, and which risks must enter the backlog.
+AI systems add risks that ordinary software pipelines do not fully cover: training data may be biased, model behaviour may be statistically uncertain, the operational environment may diverge from the training environment, and performance may degrade after deployment. The responsible-AI software engineering roadmap therefore treats responsible AI as a lifecycle concern across governance, process, and system perspectives, including monitoring, co-versioning of data/model/code/configuration, audit trails, and dynamic ethical risk assessment \cite[Secs.~3--5]{lu_responsible_ai}, \cite[Sec.~4.1]{lu_responsible_ai}.
 
-For AI systems, the DevOps pipeline must also manage data, training, validation, deployment, runtime monitoring, and possible retraining or rollback.
-
-\subsection{The W-shaped AI lifecycle}
-
-For AI systems, especially high-risk systems, the W-shaped lifecycle is more appropriate than a simple V-model. The TAID white paper describes the AI W-shape as an expansion of the traditional V-model that accounts for the specificities of AI constituents, including the tight connection between the AI model and its pre/post-processing \cite[Sec.~5.2.3]{taid_whitepaper}. It distinguishes the \textit{host platform}, where the AI model and software system are developed, trained, tested, and validated before deployment, from the \textit{target platform}, where the deployed AI-enabled system operates under real runtime conditions and requires monitoring, human oversight, and assurance mechanisms \cite[Secs.~5.2.4--5.2.5]{taid_whitepaper}.
+The \textit{AI Risks \& Data Sources} block expresses this expansion. Before model training begins, the team must ask which data sources are legitimate, which affected groups may be under-represented, and which risks must enter value elicitation and backlog refinement.
 
 \subsection{Design-time assurance}
 
-As shown in Appendix Figure~\ref{fig:mlops-assurance}, design-time assurance takes place before deployment. Its purpose is to check whether the AI component is sufficiently reliable, compliant, and fit for the operational context in which it will be used. It includes checks on data quality and lineage, bias and representativeness, model validation, robustness and generalisation, explainability, and conformity with legal or organisational policies.
+Design-time assurance takes place before deployment. It checks whether the AI component is reliable, compliant, and fit for its declared operational context. As shown in Appendix Figure~\ref{fig:mlops-assurance}, this includes data quality and lineage, bias and representativeness, model validation, robustness and generalisation, explainability, and conformity with legal or organisational policies.
 
-The key additional control is the \textit{Model Evaluation Gate}. This gate ensures that a trained model is not accepted simply because it can be executed, but only if there is enough evidence that it satisfies its requirements and that the remaining risks are understood.
-
-In this sense, design-time assurance mainly supports active responsibility: foreseeable harms must be identified, assessed, and mitigated before the model is deployed.
+The key added control is the \textit{Model Evaluation Gate}: a trained model is not accepted merely because it runs, but because evidence supports deployment under known requirements and residual risks. This mainly supports active responsibility, because foreseeable harms must be assessed and mitigated before release.
 
 \subsection{Runtime assurance}
 
-Runtime assurance is performed after deployment and focuses on whether the deployed system remains trustworthy under actual operating conditions. Appendix Figure~\ref{fig:mlops-assurance} separates the \textit{Runtime Assurance} layer from the design-time gates and shows the monitoring and control mechanisms that remain active after deployment. Data drift monitoring checks whether input distributions have changed, concept drift monitoring checks whether the relation between inputs and outputs has shifted, and performance monitoring follows accuracy, latency, error rates, and fairness metrics. Safety-envelope monitoring detects states outside the approved operational domain, while fallback mechanisms, rollback, conservative decision logic, and human escalation turn monitoring into corrective feedback rather than passive observation.
+Runtime assurance takes place after deployment and checks whether the AI-enabled system remains trustworthy under real operating conditions. It includes runtime monitoring, drift detection, operational-domain checks, fallback or rollback mechanisms, escalation, and evidence collection. In this sense, runtime assurance is broader than monitoring: it observes deviations and provides mechanisms to respond to them.
 
-Runtime assurance supports both active and passive responsibility. It actively prevents uncontrolled degradation and passively produces evidence for incident reconstruction.
+It supports active responsibility by preventing uncontrolled degradation, and passive responsibility by preserving evidence for incident reconstruction.
 
 \subsection{Meaningful Human Control}
 
-\textit{Meaningful Human Control} (MHC) is the mechanism that prevents technological autonomy from eliminating human accountability. The TAID white paper identifies MHC as a key open issue for trustworthy AI and links it to compliance, dignity, and responsibility \cite[Secs.~6.3 and~7.1.4]{taid_mhc}. In the pipeline, MHC is integrated after \textit{Runtime Assurance}: monitors detect uncertainty, drift, safety-envelope violations, or high-impact decisions, and explicit escalation thresholds route those cases to a human operator. This avoids treating human oversight as a symbolic approval step. The main risks are that operators may lack enough context, may over-trust the model recommendation, may have no real authority to stop the system, or may be asked to approve too many decisions too quickly. For this reason, MHC must be engineered through interfaces that provide context and explanation, authority to override or stop the system, logging of human decisions and machine recommendations, and clear training and role definitions for operators.
+\textit{Meaningful Human Control} (MHC) prevents technological autonomy from eliminating human accountability. In the model, MHC is mainly part of \textit{Runtime Assurance}: monitors detect uncertainty, drift, operational-domain violations, or high-impact decisions, and escalation thresholds route those cases to a human operator. MHC should therefore provide context and explanations, real authority to override or stop the system, logging of human and machine decisions, and clear role definitions for operators \cite[Secs.~6.3 and~7.1]{taid_whitepaper}.
 
 \subsection{Final Agile Normative \& Risk-prevention based model}
 
-In Figure~\ref{fig:final-pipeline}, the \textit{AI Risks \& Data Sources} inputs enter \textit{Backlog Refinement} before \textit{Sprint Planning}, so the system starts from the people, data, and harms that may be affected. \textit{Sprint Planning} then contains the CE loop, where ambiguous values are clarified before they become engineering commitments. \textit{GORE Normative Goals} and \textit{SLEEC Rules} translate those commitments into goals and rules, the \textit{CaC Policy Library} stores the executable policy version of those rules, and the \textit{Compliance Gate} checks them during delivery. The \textit{Audit Evidence Store} preserves the decisions produced by these gates, while the \textit{Model Evaluation Gate} and \textit{Runtime Assurance} blocks keep the AI component under control before and after deployment.
+In Figure~\ref{fig:final-pipeline}, the \textit{AI Risks \& Data Sources} inputs enter \textit{Backlog Refinement} before \textit{Sprint Planning}, so the system starts from the people, data, and harms that may be affected. \textit{Sprint Planning} then contains the CE loop, where ambiguous values are clarified before they are accepted as engineering commitments. \textit{GORE Normative Goals} and \textit{SLEEC Rules} translate those commitments into goals and rules, the \textit{CaC Policy Library} stores the executable policy version of those rules, and the \textit{Quality / CaC Assurance Gate} checks them during delivery. The \textit{Audit Evidence Store} preserves the decisions produced by these gates, while the \textit{Model Evaluation Gate} and \textit{Runtime Assurance} blocks keep the AI component under control before and after deployment.
 
 \begin{figure}[ht]
 \centering
@@ -315,10 +249,15 @@ In Figure~\ref{fig:final-pipeline}, the \textit{AI Risks \& Data Sources} inputs
 
 \section{Conclusions}
 
-The final pipeline transforms ethics and legality from abstract external concerns into engineering artefacts. Agile provides the iterative structure; VSD introduces stakeholders and values; Conceptual Engineering clarifies the meaning of those values; GORE and SLEEC operationalise them as goals and rules; Compliance-as-Code enforces them in the CI/CD pipeline; MLOps and Runtime Assurance keep AI systems aligned after deployment.
+The model proposed in this report shows how ethical and legal concerns can be moved from external review into the normal engineering pipeline. Agile provides the iterative structure; VSD and Conceptual Engineering make stakeholders, values, and ambiguous concepts explicit; GORE/SLEEC translate those values into normative goals and reviewable rules; CaC turns selected rules into executable checks and audit evidence; and MLOps adds design-time and runtime assurance for AI systems.
 
-The result is a pipeline oriented toward \textbf{socio-technical trustworthiness}. It does not guarantee perfect ethical behaviour, but it creates a disciplined framework for making values explicit, legal obligations traceable, compliance testable, runtime behaviour observable, and responsibility attributable.
+From a legal perspective, the strength of the model is traceability. GDPR principles such as data minimisation, transparency, accountability, and data protection by design can be connected to backlog items, norms, SLEEC rules, CaC policies, and audit evidence. The same logic supports AI Act-style risk management: AI risks and data sources enter the backlog early, while model evaluation, runtime monitoring, and human oversight become part of the assurance process.
 
+From a risk perspective, the model is preventive rather than merely reactive. The CaC gate can block non-compliant releases, while runtime assurance can detect drift, abnormal behaviour, or violations of the approved operational context after deployment. However, the model does not remove risk completely. It depends on the quality of value elicitation, the correctness of rule translation, the coverage of tests and policies, and the ability of humans to interpret runtime evidence.
+
+Human-in-the-loop control is therefore not treated as a symbolic approval step. Meaningful Human Control is useful only if operators receive understandable explanations, have authority to intervene, and are supported by logs, escalation paths, and clear responsibility assignments. This is also where the RACI matrix is important: it reduces the responsibility gap by linking tasks, rules, gates, exceptions, and runtime decisions to identifiable roles.
+
+Practically, the model is feasible because it extends artefacts already familiar to software teams: backlogs, sprint planning, CI/CD gates, policy repositories, model evaluation, monitoring, and retrospectives. Its main strength is that it creates a continuous chain from values to evidence. Its main limitation is complexity: not every ethical or legal concern can be fully automated, and overloading the pipeline with too many gates may slow development or create false confidence. The model should therefore be used as a disciplined framework for making responsibility, compliance, and AI risk explicit, not as a guarantee that ethical behaviour can be completely reduced to code.
 
 \clearpage
 \appendix
@@ -437,6 +376,13 @@ Legal framework and CSR & GDPR, AI Act, CSR, and organisational governance becom
 \end{longtable}
 
 
+\section{Turing and Searle as Warnings for Responsible AI}
+
+The Turing-test tradition frames intelligence behaviourally: a machine may appear intelligent if its outputs are indistinguishable from those of a human. However, software engineering for responsible AI cannot rely only on output imitation. A system may produce convincing behaviour while still violating privacy, amplifying bias, or hiding causal responsibility. The distinction between weak and strong AI is therefore operationally relevant: most deployed AI systems should be engineered as powerful decision-support artefacts, not as autonomous moral subjects.
+
+Also the Searle's Chinese Room argument is useful as a warning for formal compliance. A rule engine may manipulate symbols correctly while lacking semantic understanding of the underlying value. This is not an argument against formalisation; rather, it shows why formal rules must remain connected to stakeholder interpretation, domain expertise, legal review, and human oversight. In the proposed pipeline, SLEEC rules and policy-as-code are therefore treated as \emph{engineering artefacts requiring governance}, not as replacements for judgement.
+
+
 \section{Implementation Blueprint}
 
 A practical implementation can proceed incrementally:
@@ -455,62 +401,88 @@ A practical implementation can proceed incrementally:
 \clearpage
 \begin{thebibliography}{99}
 
-\bibitem{wiener_cybernetics}
-N. Wiener, \emph{Cybernetics: Or Control and Communication in the Animal and the Machine}, MIT Press, 1948.
-
-\bibitem{turing_computing}
-A. M. Turing, ``Computing Machinery and Intelligence,'' \emph{Mind}, vol. 59, no. 236, pp. 433--460, 1950. DOI: \url{https://doi.org/10.1093/mind/LIX.236.433}.
-
-\bibitem{searle_chinese_room}
-J. R. Searle, ``Minds, Brains, and Programs,'' \emph{Behavioral and Brain Sciences}, vol. 3, no. 3, pp. 417--424, 1980. DOI: \url{https://doi.org/10.1017/S0140525X00005756}.
-
 \bibitem{matthias_responsibility_gap}
-A. Matthias, ``The responsibility gap: Ascribing responsibility for the actions of learning automata,'' \emph{Ethics and Information Technology}, vol. 6, pp. 175--183, 2004. DOI: \url{https://doi.org/10.1007/s10676-004-3422-1}.
+A. Matthias,
+\emph{The responsibility gap: Ascribing responsibility for the actions of learning automata},
+vol. 6, pp. 175--183, 2004.
+DOI: \url{https://doi.org/10.1007/s10676-004-3422-1}.
 
-\bibitem{umbrello_agile_vsd}
-S. Umbrello and O. Gambelin, \emph{Agile as a Vehicle for Values: A Value Sensitive Design Toolkit}, preprint version, later published in Springer, 2023.
+\bibitem{vsd}
+Umbrello, S., and Gambelin, O.
+\emph{Agile as a Vehicle for Values: A Value Sensitive Design Toolkit}.
+In \emph{Rethinking Technology and Engineering: Dialogues Across Disciplines and Geographies},
+2023.
+Available at: \url{https://iris.unito.it/handle/2318/1885145}.
 
 \bibitem{veluwenkamp_ce}
-H. Veluwenkamp and J. van den Hoven, ``Design for values and conceptual engineering,'' \emph{Ethics and Information Technology}, vol. 25, article 2, 2023. DOI: \url{https://doi.org/10.1007/s10676-022-09675-6}.
+H. Veluwenkamp and J. van den Hoven,
+\emph{Design for values and conceptual engineering},
+vol. 25, article 2, 2023.
+DOI: \url{https://doi.org/10.1007/s10676-022-09675-6}.
 
 \bibitem{silva_gore_sleec}
-E. Silva Junior, L. Marsso, R. Caldas, M. Chechik, and G. N. Rodrigues, \emph{Operationalizing Human Values in the Requirements Engineering Process of Ethics-Aware Autonomous Systems}, arXiv:2602.09921, 2026.
-
-\bibitem{lu_responsible_ai}
-Q. Lu, L. Zhu, X. Xu, J. Whittle, and Z. Xing, \emph{Towards a Roadmap on Software Engineering for Responsible AI}, arXiv:2203.08594, 2022.
-
-\bibitem{singh_cac}
-P. Singh, ``Integrating Compliance-as-Code into CI/CD Pipelines for Regulated Industries,'' \emph{International Journal of Innovative Research and Creative Technology}, vol. 11, no. 2, 2025.
+E. Silva J\'unior, L. Marsso, R. Caldas, M. Chechik, and G. N. Rodrigues,
+\emph{Operationalizing Human Values in the Requirements Engineering Process of Ethics-Aware Autonomous Systems},
+arXiv:2602.09921, 2026.
+Available at: \url{https://arxiv.org/abs/2602.09921}.
 
 \bibitem{potharalanka_cac}
-L. Potharalanka, ``Compliance-As-Code: A Framework for Regulatory Automation in Enterprise CI/CD Pipelines,'' \emph{Sarcouncil Journal of Engineering and Computer Sciences}, vol. 4, issue 7, pp. 257--267, 2025.
+L. Potharalanka,
+\emph{Compliance-As-Code: A Framework for Regulatory Automation in Enterprise CI/CD Pipelines},
+Sarcouncil Journal of Engineering and Computer Sciences, vol. 4, issue 7, pp. 257--267, 2025.
+Available at: \url{https://www.sarcouncil.com/download-article/SJECS-145_-2025-257-267.pdf}.
+
+\bibitem{cac}
+Prashant Singh,
+\emph{Integrating Compliance-as-Code into CI/CD Pipelines for Regulated Industries},
+Compliance-as-Code into CI/CD Pipelines for Regulated Industries, IJIRCT, vol.11 (Issue 2), 2025.
+Available at: \url{https://www.ijirct.org/viewPaper.php?paperId=2506009}.
+
+\bibitem{lu_responsible_ai}
+Q. Lu, L. Zhu, X. Xu, J. Whittle, and Z. Xing,
+\emph{Towards a Roadmap on Software Engineering for Responsible AI},
+arXiv:2203.08594, 2022.
+Available at: \url{https://arxiv.org/abs/2203.08594}.
 
 \bibitem{taid_whitepaper}
-European Defence Agency, \emph{Trustworthiness for AI in Defence: Developing Responsible, Ethical, and Trustworthy AI Systems for European Defence}, TAID White Paper, version 1.0, 09/05/2025.
-
-\bibitem{taid_mhc}
-European Defence Agency, \emph{Trustworthiness for AI in Defence}, sections on Meaningful Human Control and Value-Based Engineering, 2025.
+European Defence Agency
+\emph{Trustworthiness for AI in Defence: Developing Responsible, Ethical, and Trustworthy AI Systems for European Defence},
+TAID White Paper, version 1.0, 09/05/2025. 
+Available at: \url{https://eda.europa.eu/docs/default-source/brochures/taid-white-paper-final-09052025.pdf}.
 
 \bibitem{bml_ethsecdevops}
-D. Webster and B. Johnson, ``EthSecDevOps: Integrating Ethics as a First-Class Citizen in Product Development,'' BML Global. Available at: \url{https://bml.global/ethsecdevops-integrating-ethics-as-a-first-class-citizen-in-product-development/}.
+BML Global.
+\emph{EthSecDevOps: Integrating Ethics as a First-Class Citizen in Product Development}.
+2025.
+Available at: \url{https://bml.global/ethsecdevops-integrating-ethics-as-a-first-class-citizen-in-product-development/}.
+Accessed: 2026-06-05.
 
-\bibitem{deployflow_gdpr}
-N. Ilic, ``Making GDPR Practical: Real-World DevOps Pipelines That Pass Audits,'' Deployflow, 2025. Available at: \url{https://deployflow.co/blog/making-gdpr-practical-devops-pipelines-pass-audits/}.
+\bibitem{deployflow_gdpr_devops}
+Deployflow.
+\emph{Making GDPR Practical: DevOps Pipelines That Pass Audits}.
+2025.
+Available at: \url{https://deployflow.co/blog/making-gdpr-practical-devops-pipelines-pass-audits/}.
+Accessed: 2026-06-05.
 
-\bibitem{gdpr_art5}
-European Union, General Data Protection Regulation, Article 5, ``Principles relating to processing of personal data.'' Available at: \url{https://gdpr-info.eu/art-5-gdpr/}.
+\bibitem{gdpr_2016_679}
+European Parliament and Council of the European Union.
+\emph{Regulation (EU) 2016/679: General Data Protection Regulation}.
+2016.
+Available at: \url{https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng}.
+See especially Articles 5 and 25.
 
-\bibitem{gdpr_art25}
-European Union, General Data Protection Regulation, Article 25, ``Data protection by design and by default.'' Available at: \url{https://gdpr-info.eu/art-25-gdpr/}.
+\bibitem{edpb_guidelines_4_2019}
+European Data Protection Board.
+\emph{Guidelines 4/2019 on Article 25 Data Protection by Design and by Default}.
+Version 2.0, adopted on 20 October 2020.
+Available at: \url{https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-42019-article-25-data-protection-design-and_en}.
 
-\bibitem{edpb_dpbdd}
-European Data Protection Board, \emph{Guidelines 4/2019 on Article 25 Data Protection by Design and by Default}, version 2.0, 2020.
-
-\bibitem{eu_ai_act}
-European Commission, ``AI Act,'' Shaping Europe's Digital Future. Available at: \url{https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai}.
-
-\bibitem{ai_act_human_oversight}
-European Union, Artificial Intelligence Act, Article 14, ``Human oversight.'' Available at: \url{https://artificialintelligenceact.eu/article/14/}.
+\bibitem{ai_act_2024_1689}
+European Parliament and Council of the European Union.
+\emph{Regulation (EU) 2024/1689: Artificial Intelligence Act}.
+2024.
+Available at: \url{https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng}.
+See especially Article 14 on human oversight.
 
 \end{thebibliography}
 
