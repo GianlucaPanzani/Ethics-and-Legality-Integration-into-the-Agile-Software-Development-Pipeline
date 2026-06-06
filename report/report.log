@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.12.28)  6 JUN 2026 16:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.12.28)  6 JUN 2026 19:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -767,66 +767,61 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 ]
-<../diagram/agile1.pdf, id=187, 811.11026pt x 174.6525pt>
+<../diagram/agile1.pdf, id=182, 811.11026pt x 174.6525pt>
 File: ../diagram/agile1.pdf Graphic file (type pdf)
 <use ../diagram/agile1.pdf>
-Package pdftex.def Info: ../diagram/agile1.pdf  used on input line 135.
+Package pdftex.def Info: ../diagram/agile1.pdf  used on input line 136.
 (pdftex.def)             Requested size: 326.6361pt x 70.33412pt.
 
 
 [2 <../diagram/agile1.pdf>]
-<../diagram/agile3.pdf, id=217, 1078.99106pt x 406.3983pt>
+<../diagram/agile3.pdf, id=211, 1078.99106pt x 406.3983pt>
 File: ../diagram/agile3.pdf Graphic file (type pdf)
 <use ../diagram/agile3.pdf>
-Package pdftex.def Info: ../diagram/agile3.pdf  used on input line 162.
+Package pdftex.def Info: ../diagram/agile3.pdf  used on input line 163.
 (pdftex.def)             Requested size: 373.30144pt x 140.60443pt.
 
 
 [3 <../diagram/agile3.pdf>]
-<../diagram/agile5.pdf, id=245, 1136.32526pt x 449.76028pt>
+<../diagram/agile5.pdf, id=241, 1136.32526pt x 449.76028pt>
 File: ../diagram/agile5.pdf Graphic file (type pdf)
 <use ../diagram/agile5.pdf>
 Package pdftex.def Info: ../diagram/agile5.pdf  used on input line 187.
 (pdftex.def)             Requested size: 373.30144pt x 147.7488pt.
 
-Overfull \hbox (16.90456pt too wide) in paragraph at lines 196--197
+Overfull \hbox (25.71936pt too wide) in paragraph at lines 197--198
 \T1/cmr/m/n/10.95 The next ex-pan-sion moves from re-quire-ments spec-i-fi-ca-t
-ion to the De-vOps CI/CD pipeline. Compliance-
+ion to the De-vOps CI/CD pipeline. \T1/cmr/bx/n/10.95 Compliance-
  []
 
 
 
 [4 <../diagram/agile5.pdf>]
-<../diagram/agile7.pdf, id=269, 1157.28355pt x 485.89528pt>
+<../diagram/agile7.pdf, id=267, 1157.28355pt x 485.89528pt>
 File: ../diagram/agile7.pdf Graphic file (type pdf)
 <use ../diagram/agile7.pdf>
-Package pdftex.def Info: ../diagram/agile7.pdf  used on input line 210.
+Package pdftex.def Info: ../diagram/agile7.pdf  used on input line 211.
 (pdftex.def)             Requested size: 373.30144pt x 156.73524pt.
 
 
 [5 <../diagram/agile7.pdf>]
 
 [6]
-<../diagram/agile9.pdf, id=302, 1157.28355pt x 507.81718pt>
+<../diagram/agile9.pdf, id=300, 1157.28355pt x 507.81718pt>
 File: ../diagram/agile9.pdf Graphic file (type pdf)
 <use ../diagram/agile9.pdf>
-Package pdftex.def Info: ../diagram/agile9.pdf  used on input line 250.
+Package pdftex.def Info: ../diagram/agile9.pdf  used on input line 249.
 (pdftex.def)             Requested size: 373.30144pt x 163.80658pt.
 
 
 [7 <../diagram/agile9.pdf>]
 
 [8]
-<../diagram/agile10.pdf, id=327, 805.08775pt x 354.36388pt>
+<../diagram/agile10.pdf, id=325, 805.08775pt x 354.36388pt>
 File: ../diagram/agile10.pdf Graphic file (type pdf)
 <use ../diagram/agile10.pdf>
 Package pdftex.def Info: ../diagram/agile10.pdf  used on input line 276.
 (pdftex.def)             Requested size: 466.62503pt x 205.3906pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 290--290
-[]|\T1/cmr/m/n/10.95 Meaningful user
- []
-
 
 Underfull \hbox (badness 1158) in paragraph at lines 292--292
 \T1/cmr/m/n/10.95 sons for con-se-quen-tial de-ci-
@@ -854,45 +849,31 @@ nput line 302.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: 44D42C65CBCAA4D3D69288BB3B1FE3AC;5985
-(rerunfilecheck)             After:  0E870DCBB6C7D7D64C92DAFCA98E5DFA;5985.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: C06916C0A25F0570597F27D2BEDAE644;5375.
  ) 
 Here is how much of TeX's memory you used:
- 24026 strings out of 473190
- 446851 string characters out of 5715799
+ 24023 strings out of 473190
+ 446812 string characters out of 5715799
  872747 words of memory out of 5000000
- 46831 multiletter control sequences out of 15000+600000
+ 46830 multiletter control sequences out of 15000+600000
  570541 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,10n,87p,891b,1096s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{appendix.48} has been referenced but does not exist
-, replaced by a fixed one
-
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb></
-usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></us
-r/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/
-local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/lo
-cal/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/loca
-l/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/
-texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/te
-xlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texl
-ive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texliv
-e/2025/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on report.pdf (13 pages, 587460 bytes).
+ 84i,10n,87p,875b,1096s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb>
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></
+usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></us
+r/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/
+local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/lo
+cal/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/loca
+l/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/
+texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/te
+xlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texl
+ive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on report.pdf (13 pages, 586534 bytes).
 PDF statistics:
- 456 PDF objects out of 1000 (max. 8388607)
- 387 compressed objects within 4 object streams
- 76 named destinations out of 1000 (max. 500000)
- 267 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 451 PDF objects out of 1000 (max. 8388607)
+ 382 compressed objects within 4 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 259 words of extra memory for PDF output out of 10000 (max. 10000000)
 
