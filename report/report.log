@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.12.28)  6 JUN 2026 16:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.12.28)  6 JUN 2026 16:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -783,7 +783,7 @@ Package pdftex.def Info: ../diagram/agile3.pdf  used on input line 162.
 
 
 [3 <../diagram/agile3.pdf>]
-<../diagram/agile5.pdf, id=247, 1136.32526pt x 449.76028pt>
+<../diagram/agile5.pdf, id=245, 1136.32526pt x 449.76028pt>
 File: ../diagram/agile5.pdf Graphic file (type pdf)
 <use ../diagram/agile5.pdf>
 Package pdftex.def Info: ../diagram/agile5.pdf  used on input line 187.
@@ -797,7 +797,7 @@ ion to the De-vOps CI/CD pipeline. Compliance-
 
 
 [4 <../diagram/agile5.pdf>]
-<../diagram/agile7.pdf, id=273, 1157.28355pt x 485.89528pt>
+<../diagram/agile7.pdf, id=269, 1157.28355pt x 485.89528pt>
 File: ../diagram/agile7.pdf Graphic file (type pdf)
 <use ../diagram/agile7.pdf>
 Package pdftex.def Info: ../diagram/agile7.pdf  used on input line 210.
@@ -807,7 +807,7 @@ Package pdftex.def Info: ../diagram/agile7.pdf  used on input line 210.
 [5 <../diagram/agile7.pdf>]
 
 [6]
-<../diagram/agile9.pdf, id=306, 1157.28355pt x 507.81718pt>
+<../diagram/agile9.pdf, id=302, 1157.28355pt x 507.81718pt>
 File: ../diagram/agile9.pdf Graphic file (type pdf)
 <use ../diagram/agile9.pdf>
 Package pdftex.def Info: ../diagram/agile9.pdf  used on input line 250.
@@ -817,34 +817,35 @@ Package pdftex.def Info: ../diagram/agile9.pdf  used on input line 250.
 [7 <../diagram/agile9.pdf>]
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 281--281
+<../diagram/agile10.pdf, id=327, 805.08775pt x 354.36388pt>
+File: ../diagram/agile10.pdf Graphic file (type pdf)
+<use ../diagram/agile10.pdf>
+Package pdftex.def Info: ../diagram/agile10.pdf  used on input line 276.
+(pdftex.def)             Requested size: 466.62503pt x 205.3906pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
 []|\T1/cmr/m/n/10.95 Meaningful user
  []
 
 
-Underfull \hbox (badness 1158) in paragraph at lines 283--283
+Underfull \hbox (badness 1158) in paragraph at lines 292--292
 \T1/cmr/m/n/10.95 sons for con-se-quen-tial de-ci-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--284
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
 []|\T1/cmr/m/n/10.95 Explanation ac-cep-
  []
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 293.
-<../diagram/agile10.pdf, id=331, 805.08775pt x 354.36388pt>
-File: ../diagram/agile10.pdf Graphic file (type pdf)
-<use ../diagram/agile10.pdf>
-Package pdftex.def Info: ../diagram/agile10.pdf  used on input line 311.
-(pdftex.def)             Requested size: 466.62503pt x 205.3906pt.
+nput line 302.
 
 
 [9
 
-]
+ <../diagram/agile10.pdf>]
 
-[10 <../diagram/agile10.pdf>]
+[10]
 
 [11
 
@@ -863,27 +864,19 @@ Package rerunfilecheck Warning: File `report.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: 0E870DCBB6C7D7D64C92DAFCA98E5DFA;5985
-(rerunfilecheck)             After:  44D42C65CBCAA4D3D69288BB3B1FE3AC;5985.
+(rerunfilecheck)             Before: 44D42C65CBCAA4D3D69288BB3B1FE3AC;5985
+(rerunfilecheck)             After:  0E870DCBB6C7D7D64C92DAFCA98E5DFA;5985.
  ) 
 Here is how much of TeX's memory you used:
  24026 strings out of 473190
- 446856 string characters out of 5715799
- 898747 words of memory out of 5000000
- 46830 multiletter control sequences out of 15000+600000
- 569778 words of font info for 57 fonts, out of 8000000 for 9000
+ 446851 string characters out of 5715799
+ 872747 words of memory out of 5000000
+ 46831 multiletter control sequences out of 15000+600000
+ 570541 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,10n,87p,891b,1096s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-pdfTeX warning (dest): name{lstlisting.46} has been referenced but does not exi
-st, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{lstlisting.40} has been referenced but does not exi
-st, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{appendix.39} has been referenced but does not exist
+pdfTeX warning (dest): name{appendix.48} has been referenced but does not exist
 , replaced by a fixed one
 
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb></
@@ -896,10 +889,10 @@ texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/te
 xlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texl
 ive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texliv
 e/2025/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on report.pdf (13 pages, 587767 bytes).
+Output written on report.pdf (13 pages, 587460 bytes).
 PDF statistics:
- 460 PDF objects out of 1000 (max. 8388607)
- 391 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
+ 456 PDF objects out of 1000 (max. 8388607)
+ 387 compressed objects within 4 object streams
+ 76 named destinations out of 1000 (max. 500000)
  267 words of extra memory for PDF output out of 10000 (max. 10000000)
 
