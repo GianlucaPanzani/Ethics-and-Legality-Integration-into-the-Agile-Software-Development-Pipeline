@@ -23,11 +23,7 @@
 \contentsline {subsection}{\numberline {6.4}Meaningful Human Control}{7}{subsection.31}%
 \contentsline {subsection}{\numberline {6.5}Agile Normative \& Risk-prevention based model}{7}{subsection.32}%
 \contentsline {section}{\numberline {7}Conclusions}{7}{section.34}%
-\contentsline {section}{\numberline {A}MLOps Assurance Diagram}{9}{appendix.35}%
-\contentsline {section}{\numberline {B}Value Hierarchy Examples}{9}{appendix.37}%
-\contentsline {section}{\numberline {C}SLEEC Rule Examples}{9}{appendix.39}%
-\contentsline {section}{\numberline {D}Compliance-as-Code Examples}{10}{appendix.50}%
-\contentsline {section}{\numberline {E}Traceability matrix}{11}{appendix.63}%
-\contentsline {section}{\numberline {F}Mapping Course Topics to the Pipeline}{11}{appendix.64}%
-\contentsline {section}{\numberline {G}Turing and Searle as Warnings for Responsible AI}{12}{appendix.65}%
-\contentsline {section}{\numberline {H}Implementation Blueprint}{12}{appendix.66}%
+\contentsline {section}{\numberline {A}Value Hierarchy Examples}{9}{appendix.35}%
+\contentsline {section}{\numberline {B}SLEEC Rule Examples}{9}{appendix.37}%
+\contentsline {section}{\numberline {C}MLOps Assurance Diagram}{9}{appendix.48}%
+\contentsline {section}{\numberline {D}Turing and Searle as Warnings for Responsible AI}{9}{appendix.50}%
