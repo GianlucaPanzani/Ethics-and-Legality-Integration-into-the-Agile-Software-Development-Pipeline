@@ -2,8 +2,8 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.2}%
 \contentsline {section}{\numberline {2}Conceptual Foundations}{1}{section.7}%
 \contentsline {subsection}{\numberline {2.1}Feedback as the organising principle}{1}{subsection.8}%
-\contentsline {subsection}{\numberline {2.2}Responsibility and the Problem of Many Hands}{1}{subsection.9}%
-\contentsline {section}{\numberline {3}Value Sensitive Design in Agile}{2}{section.10}%
+\contentsline {subsection}{\numberline {2.2}Risks, Responsibility and the Problem of Many Hands}{1}{subsection.9}%
+\contentsline {section}{\numberline {3}Value Sensitive Design and Value-Based Engineering in Agile}{2}{section.10}%
 \contentsline {subsection}{\numberline {3.1}The Agile loop}{2}{subsection.11}%
 \contentsline {subsection}{\numberline {3.2}Stakeholder tokens and value source analysis}{2}{subsection.13}%
 \contentsline {subsection}{\numberline {3.3}Conceptual Engineering}{3}{subsection.14}%
@@ -16,12 +16,12 @@
 \contentsline {subsection}{\numberline {5.1}CaC integration in CI/CD pipeline}{5}{subsection.23}%
 \contentsline {subsection}{\numberline {5.2}Policy-as-Code tools}{5}{subsection.24}%
 \contentsline {subsection}{\numberline {5.3}Integration with the Agile Normative-based model}{5}{subsection.25}%
-\contentsline {section}{\numberline {6}MLOps and Runtime Assurance}{5}{section.27}%
-\contentsline {subsection}{\numberline {6.1}Why AI requires a further expansion}{5}{subsection.28}%
+\contentsline {section}{\numberline {6}MLOps and Runtime Assurance}{6}{section.27}%
+\contentsline {subsection}{\numberline {6.1}Why AI requires a further expansion}{6}{subsection.28}%
 \contentsline {subsection}{\numberline {6.2}Design-time assurance}{6}{subsection.29}%
 \contentsline {subsection}{\numberline {6.3}Runtime assurance}{6}{subsection.30}%
-\contentsline {subsection}{\numberline {6.4}Meaningful Human Control}{6}{subsection.31}%
-\contentsline {subsection}{\numberline {6.5}Final Agile Normative \& Risk-prevention based model}{7}{subsection.32}%
+\contentsline {subsection}{\numberline {6.4}Meaningful Human Control}{7}{subsection.31}%
+\contentsline {subsection}{\numberline {6.5}Agile Normative \& Risk-prevention based model}{7}{subsection.32}%
 \contentsline {section}{\numberline {7}Conclusions}{7}{section.34}%
 \contentsline {section}{\numberline {A}MLOps Assurance Diagram}{9}{appendix.35}%
 \contentsline {section}{\numberline {B}Value Hierarchy Examples}{9}{appendix.37}%
