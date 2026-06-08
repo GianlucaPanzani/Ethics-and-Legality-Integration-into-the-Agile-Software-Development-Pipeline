@@ -133,7 +133,7 @@ The initial diagram is a standard Agile loop, of which an example can be found i
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.70\textwidth]{../diagram/agile1.pdf}
+\includegraphics[width=0.70\textwidth]{../diagrams/agile1.pdf}
 \caption{Baseline Agile/Scrum sprint loop, used as the starting point for the progressive integration of ethical and legal assurance.}
 \label{fig:agile-loop}
 \end{figure}
@@ -160,7 +160,7 @@ VSD/VBE and CE are integrated into Agile rather than added as an external audit.
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.80\textwidth]{../diagram/agile3.pdf}
+\includegraphics[width=0.80\textwidth]{../diagrams/agile3.pdf}
 \caption{Agile/Scrum sprint loop enriched by Value Sensitive Design, showing how ethical reflection becomes part of ordinary iterative development.}
 \label{fig:agile-vsd}
 \end{figure}
@@ -184,7 +184,7 @@ Figure~\ref{fig:gore-sleec-detail} shows how the Agile Value-Based model is exte
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.80\textwidth]{../diagram/agile5.pdf}
+\includegraphics[width=0.80\textwidth]{../diagrams/agile5.pdf}
 \caption{Detailed planning view showing how clarified values are transformed into operational requirements before implementation starts.}
 \label{fig:gore-sleec-detail}
 \end{figure}
@@ -208,7 +208,7 @@ In this integration \textit{GORE Normative Goals} and \textit{SLEEC Rules} are t
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.80\textwidth]{../diagram/agile7.pdf}
+\includegraphics[width=0.80\textwidth]{../diagrams/agile7.pdf}
 \caption{CI/CD expansion showing how compliance checks and audit evidence are integrated into the delivery process.}
 \label{fig:cac-pipeline}
 \end{figure}
@@ -246,7 +246,7 @@ Figure~\ref{fig:final-pipeline} integrates design-time and runtime assurance int
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.80\textwidth]{../diagram/agile9.pdf}
+\includegraphics[width=0.80\textwidth]{../diagrams/agile9.pdf}
 \caption{Final pipeline with the full progression from value elicitation to design-time and runtime assurance related to the MLOps integration.}
 \label{fig:final-pipeline}
 \end{figure}
@@ -273,29 +273,10 @@ Its main \textbf{limitation} is that not every ethical or legal concern can be f
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=\textwidth]{../diagram/agile10.pdf}
+\includegraphics[width=\textwidth]{../diagrams/agile10.pdf}
 \caption{MLOps assurance view, distinguishing the checks performed before deployment from the monitoring and control mechanisms active after release.}
 \label{fig:mlops-assurance}
 \end{figure}
-
-\section{Value Hierarchy Examples}
-
-\begin{table}[ht]
-\centering
-\begin{tabular}{p{2.4cm}p{3.4cm}p{5.0cm}p{3.5cm}}
-\toprule
-\textbf{Value} & \textbf{Norm} & \textbf{Requirement} & \textbf{Verification} \\
-\midrule
-Privacy & Data minimisation & Collect only fields required for the declared purpose. & Schema test; privacy review \\
-Autonomy & User control & Provide users with the ability to change their choices or appeal decisions. & UX test; audit log \\
-Fairness & Non-discrimination & Evaluate model performance across relevant groups. & Fairness test report \\
-Transparency & Explainability & Provide understandable reasons for consequential decisions. & Explanation acceptance test \\
-Security & Integrity and confidentiality & Encrypt personal data at rest and in transit. & IaC/policy test \\
-\bottomrule
-\end{tabular}
-\caption{Illustrative examples of value hierarchy entries.}
-\label{tab:value-hierarchy-examples}
-\end{table}
 
 \section{SLEEC Rule Examples}
 
@@ -312,13 +293,6 @@ rule human_review_high_risk_decision:
   when HighRiskAIDecisionGenerated and confidence < threshold
   then EscalateToHumanReviewer within 5 minutes
 \end{lstlisting}
-
-\section{Turing and Searle as Warnings for Responsible AI}
-
-The Turing-test tradition frames intelligence behaviourally: a machine may appear intelligent if its outputs are indistinguishable from those of a human. However, software engineering for responsible AI cannot rely only on output imitation. A system may produce convincing behaviour while still violating privacy, amplifying bias, or hiding causal responsibility. The distinction between weak and strong AI is therefore operationally relevant: most deployed AI systems should be engineered as powerful decision-support artefacts, not as autonomous moral subjects.
-
-Also the Searle's Chinese Room argument is useful as a warning for formal compliance. A rule engine may manipulate symbols correctly while lacking semantic understanding of the underlying value. This is not an argument against formalisation; rather, it shows why formal rules must remain connected to stakeholder interpretation, domain expertise, legal review, and human oversight. In the proposed pipeline, SLEEC rules and policy-as-code are therefore treated as \emph{engineering artefacts requiring governance}, not as replacements for judgement.
-
 
 
 \clearpage

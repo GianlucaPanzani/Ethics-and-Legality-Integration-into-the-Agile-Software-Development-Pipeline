@@ -23,6 +23,4 @@
 \contentsline {subsection}{\numberline {6.4}AI-based Agile model}{7}{subsection.31}%
 \contentsline {section}{\numberline {7}Conclusions}{7}{section.33}%
 \contentsline {section}{\numberline {A}MLOps Assurance Diagram}{9}{appendix.34}%
-\contentsline {section}{\numberline {B}Value Hierarchy Examples}{9}{appendix.36}%
-\contentsline {section}{\numberline {C}SLEEC Rule Examples}{9}{appendix.38}%
-\contentsline {section}{\numberline {D}Turing and Searle as Warnings for Responsible AI}{10}{appendix.49}%
+\contentsline {section}{\numberline {B}SLEEC Rule Examples}{9}{appendix.36}%
